@@ -1,116 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+    <title>Refricenter</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 
-  <title>Refricenter</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <!-- Navigation -->
-      <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
-      <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
-          <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand page-scroll" href="#page-top">
-                      <img src="img/logosmall.png" class="img-responsive" alt="">
-                  </a>
+  </head>
+  <body id="page-top">
+  <%= yield %>
+  <footer class="footer" style="background-image: url('img/contact.png')">
+      <div class="container text-center">
+          <div class="row red">
+              <div class="col-md-4 contact-details red">
+                  <h4><i class="fa fa-phone"></i> Call</h4>
+                  <p><a href="tel:3054778880">(305) 477-8880</a></p>
               </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
-                      <li class="hidden">
-                          <a class="page-scroll" href="#page-top"></a>
+              <div class="col-md-4 contact-details red">
+                  <h4><i class="fa fa-map-marker"></i> Visit</h4>
+                  <p><a href="http://maps.apple.com/?address=7101,NW+43rd+St,Miami,Florida">7101 NW 43rd Street
+                      <br>Miami, FL 33166</a></p>
+              </div>
+              <div class="col-md-4 contact-details red">
+                  <h4><i class="fa fa-envelope"></i> Email</h4>
+                  <p><a href="mailto:mail@example.com">mail@example.com</a>
+                  </p>
+              </div>
+          </div>
+          <div class="row social">
+              <div class="col-lg-12">
+                  <ul class="list-inline">
+                      <li><a href="https://www.facebook.com/RefricenterOfMiami/"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
                       </li>
-                      <li>
-                          <a class="page-scroll" href="#about">About</a>
+                      <li><a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
                       </li>
-                      <li>
-                          <a class="page-scroll" href="#team">Team</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#work">Products</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#contact">Contact</a>
+                      <li><a href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
                       </li>
                   </ul>
               </div>
-              <!-- /.navbar-collapse -->
           </div>
-          <!-- /.container -->
-      </nav>
-      <header style="background-image: url('img/house3.png');">
-          <div class="intro-content">
-              <img src="" class="img-responsive img-centered" alt="">
-              <div class="brand-name"><img src="img/logofull2.png"></div>
-              <hr class="colored">
-              <div class="brand-name-subtext"><b>Miami, FL</b></div>
+          <div class="row copyright">
+              <div class="col-lg-12">
+                  <p class="small">&copy;<b> Refricenter 2015</b></p>
+              </div>
           </div>
-          <div class="scroll-down">
-              <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
-          </div>
-      </header>
-<%= yield %>
-<footer class="footer" style="background-image: url('img/contact.png')">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-4 contact-details">
-                    <h4><i class="fa fa-phone"></i> Call</h4>
-                    <p><a href="tel:3054778880">(305) 477-8880</a></p>
-                </div>
-                <div class="col-md-4 contact-details">
-                    <h4><i class="fa fa-map-marker"></i> Visit</h4>
-                    <p><a href="http://maps.apple.com/?address=7101,NW+43rd+St,Miami,Florida">7101 NW 43rd Street
-                        <br>Miami, FL 33166</a></p>
-                </div>
-                <div class="col-md-4 contact-details">
-                    <h4><i class="fa fa-envelope"></i> Email</h4>
-                    <p><a href="mailto:mail@example.com">mail@example.com</a>
-                    </p>
-                </div>
-            </div>
-            <div class="row social">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li><a href="https://www.facebook.com/RefricenterOfMiami/"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row copyright">
-                <div class="col-lg-12">
-                    <p class="small">&copy; Refricenter 2015</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-  <!-- Plain html for now  -->
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-  <title>Refricenter</title>
-  <%= stylesheet_link_tag    'pages', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%#= csrf_meta_tags %>
-
-</head>
-<body>
-
-<%= yield %>
-
-</body>
-</html>
+      </div>
+  </footer>
+  </body>
+  </html>

@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
-.color {
+.red {
+  color:navy;
+}
 
+.red a {
+  color:navy;
 }
