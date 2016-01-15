@@ -24,9 +24,12 @@
         <td><%= product.logo %></td>
         <td><%= product.image %></td>
         <td><%= product.mod_name %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+        <td><%= link_to( "Show", { action: 'show', id: product.id } ) %></td>
+
+        <td><%= link_to( 'Edit', { action: 'edit', id: product.id } ) %></td>
+
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +37,4 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<%= link_to 'New Product', new_category_product_path %>
