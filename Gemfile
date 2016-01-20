@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'devise'
 gem 'sendgrid'
 gem 'bootstrap-sass'
+gem 'masonry-rails' ## grid library
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

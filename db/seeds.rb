@@ -5,3 +5,22 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+categories = [
+  {
+  name: "Inverter Mini-splits",
+  description: "Wide Range of Product Offerings Including High Efficiency and Inverter Units"
+  },
+  {
+  name: "Ducted systems",
+  description:"Single-phase Split Systems with a capacity from 1-5 Tons"
+  },
+  {
+  name:"LG duty free systems",
+  description: "LG's Duct-Less Single Zone And Multi-Zone Offerings Reduce Contractor Costs And Save Consumers Money On Electricity"
+  }
+
+  ## NOTE TO BE CONTINUED
+]
+category = Category.create(categories)
