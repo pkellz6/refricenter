@@ -8,9 +8,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1
   def show
-    p "**************#######^^^^^^^^^^"
-    p @category
-    p "<<<<<<<********************>>>>>>>>>>>>>"
+    
   end
 
   # GET /categories/new
