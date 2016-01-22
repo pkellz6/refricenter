@@ -77,7 +77,7 @@ products = [
 - Self-cleaning system leaves indoor unit dry and prevents accumulation of mildew",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FUltra%5FPremier%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -89,7 +89,7 @@ products = [
 - Various System Combinations Allow For Tremendous Flexibility With Installations",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWOHC%5FMulti%282%29%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -102,7 +102,7 @@ products = [
 - Auto Restart After Loss Of Power",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWOHC%5FMulti%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -115,7 +115,7 @@ products = [
 - LED Display With A Sleek, Modern Look",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWS9T%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -128,7 +128,7 @@ products = [
 - LED Display With A Sleek, Modern Look",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWS9C%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -143,7 +143,7 @@ products = [
 - Automatic Cleaning",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWVT%5FPR%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -156,7 +156,7 @@ products = [
 - Sleep Mode Function",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWVC%281%29%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -168,7 +168,7 @@ products = [
 - Rotary or Twin-Rotary Compressor Configuration",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWLLT%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -180,7 +180,7 @@ products = [
 - Rotary or Twin-Rotary Compressor Configuration",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWLLC%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -194,7 +194,7 @@ products = [
 - Turbo Cooling",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWCOT%5FNEW%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -208,7 +208,7 @@ products = [
 - Turbo Cooling",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWLLC%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -222,7 +222,7 @@ products = [
 - High efficiency evaporator",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWCOT%5FNEW%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -236,7 +236,7 @@ products = [
 - High efficiency evaporator",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWLLC%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   },
   {
@@ -250,7 +250,7 @@ products = [
 - Available in 115 V and 230 V",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWCOT%5FNEW%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category:"inverter_mini_splits",
+    category_id:"inverter_mini_splits",
     mod_name:""
   }
   # ,
@@ -260,7 +260,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -269,7 +269,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -278,7 +278,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -287,7 +287,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -296,7 +296,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -305,7 +305,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -314,7 +314,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -323,7 +323,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -332,7 +332,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -341,7 +341,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -350,7 +350,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -359,7 +359,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -368,7 +368,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -377,7 +377,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -386,7 +386,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -395,7 +395,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -404,7 +404,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # },
   # {
@@ -413,259 +413,7 @@ products = [
   #   description:"",
   #   image: "",
   #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category:"",
+  #   category_id:"",
   #   mod_name:""
   # }
 ]
