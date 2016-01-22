@@ -100,3 +100,64 @@ cats = [
   }
 ]
 cat = Category.create(cats)
+
+products = [
+  {
+    name:"",
+    price:0,
+    description:"",
+    image: "",
+    category:""
+  },
+  {
+    name:"",
+    price:0,
+    description:"",
+    image: "",
+    category:""
+  },
+  {
+    name:"",
+    price:0,
+    description:"",
+    image: "",
+    category:""
+  },
+  {
+    name:"",
+    price:0,
+    description:"",
+    image: "",
+    category:""
+  },
+  {
+    name:"",
+    price:0,
+    description:"",
+    image: "",
+    category:""
+  },
+  {
+    name:"",
+    price:0,
+    description:"",
+    image: "",
+    category:""
+  },
+  {
+    name:"",
+    price:0,
+    description:"",
+    image: "",
+    category:""
+  },
+  {
+    name:"",
+    price:0,
+    description:"",
+    image: "",
+    category:""
+  }
+]
+
+product = Product.create(products)
