@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Categories - BRANDS</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <% @categories.each do |category| %>
+<div id="categories" class="transitions-enabled box panel panel-default">
+      <tr>
+        <td><%= link_to image_tag(category.image), category %></td>
+
+        <td><%= category.name %></td>
+        <td><%= category.description %></td>
+              <td class="actions"><%= link_to 'Show', category %></td>
+
+      </tr>
+</div>
+      <% end %>
+
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Category', new_category_path %>

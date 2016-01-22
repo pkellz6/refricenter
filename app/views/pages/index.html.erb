@@ -147,25 +147,70 @@
             <p>Take a look at some of the products we carry. Online Store Coming Soon!!</p>
         </div>
     </section>
-    <section id="products" class="portfolio-carousel wow fadeIn">
+    <section id="products" class="portfolio-carousel wow fadeIn" style="background-image: white;">
   <!-- First Product category  -->
-        <div class="item" style="background-image: url('img/ac.png')">
-            <div class="container-fluid">
-                <div class="row">
+        <!--style:  -->
+            <!-- <div class="container-fluid">
+              <div class="row" style="background-image: url('img/ac.png')">
+                  <div class="col-md-6">
+                    <div class="project-details">
+                        <span class="project-name"><b>Brands</span>
+                        <span class="project-description">Refricenter's inventory</b></span>
+                        <hr class="colored">
+
+                      <#%= link_to "View by Category", categories_path, class:"btn btn-outline-light" %> </a>
+                    </div>
+                    </div>
+                  </div>
+                </div>  -->
+                <div class="item" style="background-color: white;">
+                  <div class="container-fluid">
+                  <div class="row" style="background-image: url('img/ac.png')">
+                    <div class="col-md-6">
+                      <div class="project-details">
+                          <span class="project-name"><b>Categories</span>
+                          <span class="project-description">Refricenter's inventory</b></span>
+                          <hr class="colored">
+
+                        <%= link_to "View by Category", categories_path, class:"btn btn-outline-light" %> </a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container-fluid">
+                    <div class="row" style="background-image: url('img/brands.png')">
+                        <div class="col-md-6">
+                          <div class="project-details">
+                              <span class="project-name"><b>Brands</span>
+                              <span class="project-description">Refricenter's inventory</b></span>
+                              <hr class="colored">
+
+                            <%= link_to "View by Brands", brands_path, class:"btn btn-outline-light" %> </a>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+
+
+
+                  <!-- TODO BEFORE   -->
+              <!--  <div class="row">
                     <div class="col-md-4 col-md-push-8">
                         <div class="project-details">
                             <span class="project-name"><b>View our Products</span>
                             <span class="project-description">Refricenter's inventory</b></span>
                             <hr class="colored">
-                            <!-- <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">Search<i class="fa fa-long-arrow-right fa-fw"></i></a> -->
-                          <%= link_to "Search", categories_path, class:"btn btn-outline-light" %> <i class="fa fa-long-arrow-right fa-fw"></i></a>
+
+                          <%= link_to "Search", categories_path, class:"btn btn-outline-light" %> </a>
                         </div>
                     </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
-                    </div>
-                </div>
-            </div>
-        </div>
+
+                </div> -->
+                <!-- <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">Search<i class="fa fa-long-arrow-right fa-fw"></i></a> -->
+
 
         <!-- <div class="item" style="background-color: white;)">
             <div class="container-fluid">

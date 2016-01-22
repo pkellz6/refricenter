@@ -13,9 +13,10 @@
   </thead>
 
   <tbody>
-
+  <div id="categories" class="transitions-enabled ">
+<!-- <div id="categories" class="transitions-enabled box panel panel-default"> -->
     <% @categories.each do |category| %>
-<div id="categories" class="transitions-enabled box panel panel-default">
+
       <tr>
         <td><%= link_to image_tag(category.image), category %></td>
 
@@ -24,9 +25,9 @@
               <td class="actions"><%= link_to 'Show', category %></td>
 
       </tr>
-</div>
-      <% end %>
 
+      <% end %>
+</div>
   </tbody>
 </table>
 

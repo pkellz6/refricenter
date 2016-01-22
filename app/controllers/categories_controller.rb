@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
-
+  before_action :index, only: [:brands]
   # GET /categories
   def index
     @categories = Category.all
@@ -10,6 +10,10 @@ class CategoriesController < ApplicationController
   def show
       @products = Product.all
   end
+
+  def brands
+  end
+
 
   # GET /categories/new
   def new
