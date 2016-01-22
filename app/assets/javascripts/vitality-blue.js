@@ -4,8 +4,8 @@
  * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
  */
  $(document).ready(function(){
-   console.log("Vitality!");
- })
+   console.log("Vitality11!");
+ });
 
 (function($) {
     "use strict"; // Start of use strict
@@ -103,22 +103,22 @@
     // Portfolio Filtering Scripts & Hover Effect
     var filterList = {
         init: function() {
-
+            console.log("FilterList in vitality-blue.js");
             // MixItUp plugin
             // http://mixitup.io
-            $('#portfoliolist').mixitup({
-                targetSelector: '.portfolio',
-                filterSelector: '.filter',
-                effects: ['fade'],
-                easing: 'snap',
-                // call the hover effect
-                onMixEnd: filterList.hoverEffect()
-            });
+            // $('#portfoliolist').mixitup({
+            //     targetSelector: '.portfolio',
+            //     filterSelector: '.filter',
+            //     effects: ['fade'],
+            //     easing: 'snap',
+            //     // call the hover effect
+            //     onMixEnd: filterList.hoverEffect()
+            // });
 
         },
 
         hoverEffect: function() {
-
+          console.log("Hover Effect in vitality-blue");
             // Simple parallax effect
             $('#portfoliolist .portfolio').hover(
                 function() {
@@ -143,21 +143,22 @@
 
     };
 
-    filterList.init();
+    // filterList.init();
 
 })(jQuery); // End of use strict
 
 // Load WOW.js on non-touch devices
-var isPhoneDevice = "ontouchstart" in document.documentElement;
-$(document).ready(function() {
-    if (isPhoneDevice) {
-        //mobile
-    } else {
-        //desktop
-        // Initialize WOW.js
-        wow = new WOW({
-            offset: 50
-        })
-        wow.init();
-    }
-});
+// var isPhoneDevice = "ontouchstart" in document.documentElement;
+// $(document).ready(function() {
+//     // if (isPhoneDevice) {
+//     //     //mobile
+//     // } else {
+//     //     //desktop
+//     //     // Initialize WOW.js
+//     //     wow = new WOW({
+//     //         offset: 50
+//     //     })
+//     //     wow.init();
+//     // }
+//     console.log("isPhoneDevice function in vitality-blue.js");
+// });

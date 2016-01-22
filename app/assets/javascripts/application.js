@@ -13,9 +13,18 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require masonry/jquery.masonry
+//= require masonry/jquery.imagesloaded.min
 //= require_tree .
-
 
 $(document).ready(function(){
     console.log("App.js working");
 });
+console.log("1app.js");
+$('#categories').masonry({
+  // options...
+
+  itemSelector: '.box',
+  columnWidth: 200
+});
+console.log('2app.js');

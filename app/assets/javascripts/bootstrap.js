@@ -3,9 +3,11 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under the MIT license
  */
+ console.log("Bootstrap!0");
 $(document).ready(function(){
   console.log("Bootstrap!");
-})
+});
+console.log("Bootstrap!1");
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
