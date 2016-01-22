@@ -1,11 +1,12 @@
 <p id="notice"><%= notice %></p>
-
-<p>
+<h4>Products inside | <%= @category.name %> category</h4>
+<h4>Category description: <%= @category.description %></h4>
+<!-- <p>
   <strong>Name:</strong>
-  <%= @category.name %>
-</p>
+  <%#= @category.name %>
+</p> -->
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<%#= link_to 'Edit', edit_category_path(@category) %>
+<%#= link_to 'Back', categories_path %>
 <%#= link_to "Products in this category", category_products_path(@category.id) %>
 <%= render 'products/mini_index' %>
