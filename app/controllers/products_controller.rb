@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product,  only: [:show, :edit, :update, :destroy]
-  before_action :set_category, only: [:show, :edit, :update, :destroy]
+  # before_action :set_category, only: [:show, :edit, :update, :destroy]
 
   # GET /products
   def index
@@ -51,10 +51,10 @@ class ProductsController < ApplicationController
     def set_product
       @product = Product.find(params[:id])
     end
-
-    def set_category
-      @category = Category.find(params[:category_id])
-    end
+    #
+    # def set_category
+    #   @category = Category.find(params[:category_id])
+    # end
 
     # Only allow a trusted parameter "white list" through.
     def product_params
