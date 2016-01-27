@@ -8,7 +8,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1
   def show
-      @products = Product.all
+      @products = @category.products
   end
 
   def brands

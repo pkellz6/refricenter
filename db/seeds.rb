@@ -8,7 +8,7 @@
 
 categories = [
   {
-  name: "Inverter Mini-splits",
+  name: "Inverter mini-splits",
   description: "Wide Range of Product Offerings Including High Efficiency and Inverter Units",
   image:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FSplit%5FPared%5FUltra%5FPremier%2Ejpg&width=0&height=150"
   },
@@ -38,12 +38,12 @@ categories = [
   image:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FEvaporador%5FBohn%2Ejpg&width=200&height=0"
   },
   {
-  name: "Room Air Conditioners, Portables and Dehumidifiers",
+  name: "Room air conditioners, portables and dehumidifiers",
   description: "Ductless, Pipeless Air Conditioning Units Housed All Together, Typically To Cool One Room.",
   image:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMPNT2%2Ejpg&width=200&height=0"
   },
   {
-  name:"Fan Coils, Universal Mounts, and Cassettes",
+  name:"Fan Coils, universal mounts, and cassettes",
   description:"Fan Coils For A Wide Range Of Applications.",
   image:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FFan%5FCoil2%2Ejpg&width=200&height=0"
   },
@@ -78,7 +78,7 @@ products = [
 - Self-cleaning system leaves indoor unit dry and prevents accumulation of mildew",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FUltra%5FPremier%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category_id:"inverter_mini_splits",
+    category_id:categories[0].name,
     mod_name:""
   },
   {
@@ -698,3 +698,10 @@ products = [
 ]
 #
 product = Product.create(products)
+
+
+
+Product.each do |product|
+  category = Category.find_by(name: product.category_id)
+
+end
