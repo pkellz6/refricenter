@@ -5,6 +5,7 @@ gem 'devise'
 gem 'sendgrid'
 gem 'bootstrap-sass'
 gem 'masonry-rails' ## grid library
+gem 'acts_as_list'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
