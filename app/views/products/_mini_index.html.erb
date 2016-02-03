@@ -1,35 +1,21 @@
-<br>
-<h4>Here will the products matching category go.</h4>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Description</th>
-      <th>Logo</th>
-      <th>Image</th>
-      <th colspan="5"></th>
-    </tr>
-  </thead>
+<div class="container">
+  <br>
+  <% @products.each do |product| %>
+  <div class="media">
+    <div class="media-left">
+      <a href="#">
+        <%= image_tag product.image, class: 'media-object' %>
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><%= product.name %></h4>
+      <%= product.description %>
+    </div>
+    <span class="pull-right">
+      <%= number_to_currency product.price %>
+    </span>
+  </div>
 
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td>$<%= product.price %></td>
-        <td><%= product.description %></td>
-        <td><%= image_tag(product.logo) %></td>
-        <td><%= image_tag(product.image) %></td>
-        <!-- <td><%#= product.mod_name %></td> -->
+  <% end %>
 
-
-        <!-- <td><#%= link_to( "Show", { action: 'show', id: product.id } ) %></td>
-
-        <td><#%= link_to( 'Edit', { action: 'edit', id: product.id } ) %></td> -->
-
-      </tr>
-    <% end %>
-    <!-- TODO create category page tab with product index  -->
-    <!-- <a href="#portfolioModal1" data-toggle="modal" class="btn btn-primary">Search</i></a> -->
-  </tbody>
-</table>
+</div>

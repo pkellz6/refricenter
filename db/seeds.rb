@@ -9,7 +9,7 @@
 categories = [
   {
   name: "Inverter mini-splits",
-  description: "Wide Range of Product Offerings Including High Efficiency and Inverter Units",
+  description: "Wide Range of Product Offerings Including High Efficiency and Inverter Units.",
   image:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FSplit%5FPared%5FUltra%5FPremier%2Ejpg&width=0&height=150"
   },
   {
@@ -61,11 +61,20 @@ categories = [
   name:"Insulation",
   description:"Solutions for Making Ducts in Air Conditioning, Heating, and Ventilation.",
   image:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FPlancha%5FPoliuretano%281%29%2Ejpg&width=0&height=150"
-  }
-]
-category = Category.create(categories) #TODO THIS IS ALREADY IN PRODUCTION NO NEED TO SEED IT.
-## TODO INSERT ALL PRODUCTS WITH CATEGORY ID STRING
+},
+{
+  name:"Other Products",
+  description:"Refrigerants, Copper Tubing, Accessories, Materials and Tools",
+  image:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FRefrigrantes%5FDupont%2Ejpg&width=200&height=0"
+}
 
+]
+
+# puts categories[0]
+
+# category = Category.create(categories) #TODO THIS IS ALREADY IN PRODUCTION NO NEED TO SEED IT.
+## TO DO INSERT ALL PRODUCTS WITH CATEGORY ID STRING - DONE
+# TODO RAKE DB:SEED PRODUCTS
 products = [
   {
     name:"Ultra premier inverter system",
@@ -78,7 +87,7 @@ products = [
 - Self-cleaning system leaves indoor unit dry and prevents accumulation of mildew",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FUltra%5FPremier%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -90,7 +99,7 @@ products = [
 - Various System Combinations Allow For Tremendous Flexibility With Installations",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWOHC%5FMulti%282%29%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -103,7 +112,7 @@ products = [
 - Auto Restart After Loss Of Power",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWOHC%5FMulti%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -116,7 +125,7 @@ products = [
 - LED Display With A Sleek, Modern Look",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWS9T%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -129,7 +138,7 @@ products = [
 - LED Display With A Sleek, Modern Look",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWS9C%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -144,7 +153,7 @@ products = [
 - Automatic Cleaning",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWVT%5FPR%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -157,7 +166,7 @@ products = [
 - Sleep Mode Function",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWVC%281%29%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -169,7 +178,7 @@ products = [
 - Rotary or Twin-Rotary Compressor Configuration",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWLLT%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -181,7 +190,7 @@ products = [
 - Rotary or Twin-Rotary Compressor Configuration",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWLLC%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -195,7 +204,7 @@ products = [
 - Turbo Cooling",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWCOT%5FNEW%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -209,7 +218,7 @@ products = [
 - Turbo Cooling",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWLLC%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -223,7 +232,7 @@ products = [
 - High efficiency evaporator",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWCOT%5FNEW%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -237,7 +246,7 @@ products = [
 - High efficiency evaporator",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWLLC%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClassic+Air+Conditioners%2Ejpg&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
   },
   {
@@ -251,10 +260,9 @@ products = [
 - Available in 115 V and 230 V",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMWCOT%5FNEW%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTGM%2DLOGO%2Egif&width=0&height=30",
-    category_id:categories[0].name,
+    category_id:categories[0][:name],
     mod_name:""
-  }
-  ,
+  },
   {
     name:"Bryant R-410A Air Handler",
     # price:0,
@@ -265,7 +273,7 @@ products = [
 - Field installed heaters are available",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FFB4%5Fwebsite%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FBryant%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -277,7 +285,7 @@ products = [
 - Cabinet construction innovations prevent cabinet sweating",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FFB4%5Fwebsite%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FBryant%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -290,7 +298,7 @@ products = [
 - Comes with 3-speed PSC motor",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FFFMA%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FBryant%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -299,7 +307,7 @@ products = [
     description:"",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2F14BA%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FBryant%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -311,7 +319,7 @@ products = [
 - 10-year parts; 10-year compressor warranty with registration",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2F14BA%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FBryant%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -323,7 +331,7 @@ products = [
 - Thermostatic Expansion Valve for maximizing performance",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2F14BA%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FBryant%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -334,7 +342,7 @@ products = [
 - Efficiency Boost: This unit gets up to a 1 SEER boost when paired with a variable-speed air handler or one of our furnaces with iSEER® technology",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FES4BE%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FWestinghouse%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -347,7 +355,7 @@ products = [
 - Anteater Micro-Channel coils in all models which provides high corrosion resistance",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FES6BF%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FWestinghouse%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -357,7 +365,7 @@ products = [
 - Galvanized Steel Cabinet Resists Corrosion: Galvanized steel coated in a polyester-urethane finish protects the interior of this unit",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FB6BMMX%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FWestinghouse%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -371,7 +379,7 @@ products = [
 - Anteater MC™ Micro-Channel Coil Technology",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FB6BMMO%281%29%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FWestinghouse%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -386,7 +394,7 @@ products = [
 - 5-Year All Parts Warranty",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FB6BW%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FWestinghouse%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -400,7 +408,7 @@ products = [
 - Front and/or Bottom Return Air",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FB6EW%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FWestinghouse%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -413,7 +421,7 @@ products = [
 - Anteater(TM) Coil Technology",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FB6VMAX%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FWestinghouse%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -425,7 +433,7 @@ products = [
 - Micro-Channel Coils Which Provide High Corrosion Resistance",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FFS4BF%281%29%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FWestinghouse%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -437,7 +445,7 @@ products = [
 - Shipped to be Installed Either Vertically or Horizontally",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FAHE+Air+Handler%281%29%2Egif&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLuxaire%281%29%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -450,7 +458,7 @@ products = [
 - 10-Years Limited Parts Warranty",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTCJF%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLuxaire%281%29%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -465,7 +473,7 @@ products = [
 - 5-Year All Parts Warranty",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FB6BMMO%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FPhilco%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -478,7 +486,7 @@ products = [
 - 10-Year All-Parts Warranty",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FJS4BD%2Egif&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FPhilco%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   {
@@ -490,7 +498,7 @@ products = [
 - Double Isolation Compressor Mounting for Quiet Operation",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FTCV%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FClimate+Master%2Ejpg&width=0&height=30",
-    category_id:categories[1].name,
+    category_id:categories[1][:name],
     mod_name:""
   },
   #  TODO CONTINUE HERE!!!!!!!!! ---->>>>>>>
@@ -503,7 +511,7 @@ products = [
 - R-410A Refrigerant",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FMulti%5FF%281%29%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLG%2Ejpg&width=0&height=30",
-    category_id:categories[2].name,
+    category_id:categories[2][:name],
     mod_name:""
   },
   {
@@ -516,7 +524,7 @@ products = [
 - Stylish Design",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLSN%5F%5FHYV%5F%28ArtCool+Premier%29%5FNew%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLG%2Ejpg&width=0&height=30",
-    category_id:categories[2].name,
+    category_id:categories[2][:name],
     mod_name:""
   },
   {
@@ -529,7 +537,7 @@ products = [
 - Self-Cleaning Indoor Coils",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLAN%5F%5F%5FHSV2%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLG%2Ejpg&width=0&height=30",
-    category_id:categories[2].name,
+    category_id:categories[2][:name],
     mod_name:""
   },
   {
@@ -543,7 +551,7 @@ products = [
 - 7-Year Compressor Warranty; 5-Year Parts Warranty In The United States",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLSN%5F%5F%5FHEV%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLG%2Ejpg&width=0&height=30",
-    category_id:categories[2].name,
+    category_id:categories[2][:name],
     mod_name:""
   },
   {
@@ -555,7 +563,7 @@ products = [
 - Jet Cool Operates At High Fan Speeds For 30 Minutes To Quickly Cool A Room",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLMCN%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLG%2Ejpg&width=0&height=30",
-    category_id:categories[2].name,
+    category_id:categories[2][:name],
     mod_name:""
   },
   {
@@ -569,7 +577,7 @@ products = [
 - Self-Cleaning Indoor Coil",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLSN%5F%5F%5FHSV2%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLG%2Ejpg&width=0&height=30",
-    category_id:categories[2].name,
+    category_id:categories[2][:name],
     mod_name:""
   },
   {
@@ -582,91 +590,91 @@ products = [
 - Chaos Wind Electronically Controls Fan Speeds To Create A More Natural Flow Of Air",
     image: "http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLAN%5F%5F%5FHVP%5F%28Artcool+Gallery%29%5FNew%2Ejpg&width=180&height=0",
     logo:"http://www.refripartesrd.com/inc/ewbv61.asp?fn=%2Fuploads%2FLG%2Ejpg&width=0&height=30",
-    category_id:categories[2].name,
+    category_id:categories[2][:name],
     mod_name:""
   }
-  # ,
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category_id:,
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category_id:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category_id:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category_id:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category_id:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category_id:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category_id:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category_id:"",
-  #   mod_name:""
-  # },
-  # {
-  #   name:"",
-  #   # price:0,
-  #   description:"",
-  #   image: "",
-  #   logo:"",
-  #   category_id:"",
-  #   mod_name:""
-  # }
+#   # ,
+#   # {
+#   #   name:"",
+#   #   # price:0,
+#   #   description:"",
+#   #   image: "",
+#   #   logo:"",
+#   #   category_id:,
+#   #   mod_name:""
+#   # },
+#   # {
+#   #   name:"",
+#   #   # price:0,
+#   #   description:"",
+#   #   image: "",
+#   #   logo:"",
+#   #   category_id:"",
+#   #   mod_name:""
+#   # },
+#   # {
+#   #   name:"",
+#   #   # price:0,
+#   #   description:"",
+#   #   image: "",
+#   #   logo:"",
+#   #   category_id:"",
+#   #   mod_name:""
+#   # },
+#   # {
+#   #   name:"",
+#   #   # price:0,
+#   #   description:"",
+#   #   image: "",
+#   #   logo:"",
+#   #   category_id:"",
+#   #   mod_name:""
+#   # },
+#   # {
+#   #   name:"",
+#   #   # price:0,
+#   #   description:"",
+#   #   image: "",
+#   #   logo:"",
+#   #   category_id:"",
+#   #   mod_name:""
+#   # },
+#   # {
+#   #   name:"",
+#   #   # price:0,
+#   #   description:"",
+#   #   image: "",
+#   #   logo:"",
+#   #   category_id:"",
+#   #   mod_name:""
+#   # },
+#   # {
+#   #   name:"",
+#   #   # price:0,
+#   #   description:"",
+#   #   image: "",
+#   #   logo:"",
+#   #   category_id:"",
+#   #   mod_name:""
+#   # },
+#   # {
+#   #   name:"",
+#   #   # price:0,
+#   #   description:"",
+#   #   image: "",
+#   #   logo:"",
+#   #   category_id:"",
+#   #   mod_name:""
+#   # },
+#   # {
+#   #   name:"",
+#   #   # price:0,
+#   #   description:"",
+#   #   image: "",
+#   #   logo:"",
+#   #   category_id:"",
+#   #   mod_name:""
+#   # }
 ]
 #
 

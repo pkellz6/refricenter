@@ -17,14 +17,15 @@
 //= require masonry/jquery.imagesloaded.min
 //= require_tree .
 
-$(document).ready(function(){
+$(document).on('ready page:change', function(){
     console.log("App.js working");
+    // $('#categories').masonry({
+    //   // options...
+    //   itemSelector: '.box',
+    //   columnWidth: '.container',
+    //   percentPosition: true
+    // });
 });
 console.log("1app.js");
-$('#categories').masonry({
-  // options...
 
-  itemSelector: '.box',
-  columnWidth: 200
-});
 console.log('2app.js');

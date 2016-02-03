@@ -1,65 +1,18 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Listing Categories</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Name</th>
-      <th>Description</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-  <div id="categories" class="transitions-enabled ">
-<!-- <div id="categories" class="transitions-enabled box panel panel-default"> -->
-    <% @categories.each do |category| %>
-
-      <tr>
-        <td><%= link_to image_tag(category.image), category %></td>
-
-        <td><%= category.name %></td>
-        <td><%= category.description %></td>
-              <td class="actions"><%= link_to 'Show', category %></td>
-
-      </tr>
-
-      <% end %>
-</div>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Category', new_category_path %>
-<!--
-<div id="pins" class="transitions-enabled">
-  <%# @pins.each do |pin| %>
-    <div class="box panel panel-default">
-      <%#= link_to image_tag(pin.image.url(:medium)), pin %>
-      <div class="panel-body">
-        <p><%#= pin.description %></p>
-        <p><strong><%#= pin.user.name if pin.user %></strong></p>
-
-        <%# if current_user && pin.user == current_user %>
-          <div class="actions">
-            <%#= link_to edit_pin_path(pin) do %>
-              <span class="glyphicon glyphicon-edit"></span>
-              Edit
-            <%# end %>
-            <%#= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
-              <span class="glyphicon glyphicon-trash"></span>
-              Delete
-            <%# end %>
+<!-- <div id="categories" class="transitions-enabled "> -->
+<div id="categories" class="container">
+  <% @categories.in_groups_of(3) do |group| %>
+    <div class="row">
+      <% group.each do |category| %>
+          <div class="col-md-4">
+            <h3><%= category.name %></h3>
+            <%= link_to image_tag(category.image), category %>
+            <p>
+              <%= category.description %>
+            </p>
           </div>
-        <%# end %>
-
-      </div>
+      <% end %>
     </div>
-  <%# end %>
-</div> -->
-
-        <!-- <td><%#= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%#= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+  <% end %>
+</div>

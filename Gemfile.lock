@@ -42,14 +42,19 @@ GEM
     autoprefixer-rails (6.2.3)
       execjs
       json
+    awesome_print (1.6.1)
     bcrypt (3.1.10)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.2)
-    byebug (8.2.1)
+    byebug (8.2.2)
     coderay (1.1.0)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -95,6 +100,13 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.3.0)
+      byebug (~> 8.0)
+      pry (~> 0.10)
+    pry-rails (0.3.4)
+      pry (>= 0.9.10)
+    quiet_assets (1.1.0)
+      railties (>= 3.1, < 5.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -171,14 +183,19 @@ PLATFORMS
 
 DEPENDENCIES
   acts_as_list
+  awesome_print
+  better_errors
+  binding_of_caller
   bootstrap-sass
-  byebug
   coffee-rails (~> 4.1.0)
   devise
   jquery-rails
   masonry-rails
   pg (= 0.18.4)
   pry
+  pry-byebug
+  pry-rails
+  quiet_assets
   rails (= 4.2.5)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
