@@ -94,7 +94,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: #ffffff;
 }
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -114,7 +114,7 @@ p {
   line-height: 1.5;
 }
 p.lead {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 24px;
@@ -181,6 +181,11 @@ hr.colored {
   background-color: white;
   border-radius: 0;
 }
+
+  a.page-scroll {
+    text-transform: uppercase;
+  }
+
 .navbar-default {
   background-color: #0a8fd5;
 }
@@ -237,7 +242,7 @@ hr.colored {
     border-radius: 5px;
   }
   .navbar-fixed-top.navbar-expanded {
-    padding: 30px 0;
+    padding: 15px 0;
   }
   .navbar-fixed-top {
     padding: 15px 0;
@@ -250,7 +255,7 @@ hr.colored {
   }
   .navbar-default.navbar-expanded,
   .navbar-inverse.navbar-expanded {
-    background: transparent;
+    background: rgba(50, 50, 50, 0.7);;
     border: none;
   }
 }
