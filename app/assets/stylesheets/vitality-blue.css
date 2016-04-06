@@ -255,7 +255,7 @@ hr.colored {
   }
   .navbar-default.navbar-expanded,
   .navbar-inverse.navbar-expanded {
-    background: rgba(50, 50, 50, 0.7);;
+    background: rgba(20, 20, 20, 0.95);;
     border: none;
   }
 }
