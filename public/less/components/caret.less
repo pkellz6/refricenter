@@ -1,0 +1,36 @@
+.dots {
+  position: relative;
+  display: block;
+	&:before {
+	  font-family: 'Welldone';
+	  content: "\e657";
+	}	
+}
+.dots--vertical {	
+	&:before {
+	  content: "\e641";
+	}	
+}
+
+.caret {
+&.caret--dots {
+	display: block;
+	margin: -20px auto 0;
+	width: auto;
+	border-width: 0 0 0 0;
+	text-align: center;
+	font-size: 9px;
+//	color: @caret-dots-color;
+	.dots;
+	&.caret--dots--vertical {
+		height: 22px;
+		font-size: 17px;
+//		color: #212121;
+		margin: 0;
+		.dots--vertical;
+	}
+	.header--transparent & {
+//		color: @logo-transparent-color;
+	}
+  }
+}

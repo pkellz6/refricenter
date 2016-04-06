@@ -1,0 +1,176 @@
+/*countdown*/
+.countdown_box {
+	.eight-in-row &, .seven-in-row & {
+		display: none;
+	}
+}
+@media (max-width: @screen-sm-max) {
+	.countdown_box {
+		display: none;
+	}
+}
+.countdown-holding span {
+//	color: #888
+}
+.countdown-row {
+	clear: both;
+	width: 100%;
+	padding: 0 2px;
+	text-align: center
+}
+.countdown-show1 .countdown-section {
+	width: 98%
+}
+.countdown-show2 .countdown-section {
+	width: 48%
+}
+.countdown-show3 .countdown-section {
+	width: 31.5%
+}
+.countdown-show4 .countdown-section {
+	width: 22.5%
+}
+.countdown-show5 .countdown-section {
+	width: 19.5%
+}
+.countdown-show6 .countdown-section {
+	width: 16.25%
+}
+.countdown-show7 .countdown-section {
+	width: 14%
+}
+.countdown-period {
+	display: block
+}
+.countdown-descr {
+	display: block;
+	width: 100%
+}
+.countdown_box {
+//	color: #272727;
+	line-height: 18px;
+	position: absolute;
+	text-align: center;
+	.vertical-align;
+	width: 100%;
+	z-index: 999
+}
+.countdown_inner {
+	overflow: hidden;
+	.drop-shadow (0, 0, 2px, 0, 0.25);
+	margin: 0 auto;
+	width: 80%;
+	padding: 15px 15px 15px;
+//	background: rgba(255,255,255,0.9);
+	text-align: center
+}
+.countdown_inner .title {
+	margin: 0 0 5px;
+	font-size: 14px;
+//	color: #000;
+	text-transform: uppercase
+}
+.countdown-section {
+	display: inline-block;
+	text-align: center;
+//	background: #f5f5f5;
+	padding: 5px 0;
+	margin: 0 1px 0 0;
+	font-size: 9px;
+	line-height: 10px;
+	text-transform: uppercase;
+}
+.countdown-amount {
+//	color: #000;
+	line-height: 1em;
+	@media (min-width: @screen-sm-min) {
+		font-size: 16px;
+	}
+	@media (min-width: @screen-md-min) {
+		font-size: 20px;
+	}
+	@media (min-width: @screen-lg-min) {
+		font-size: 28px;
+	}
+}
+.two-in-row {
+	.countdown-amount {
+		@media (min-width: @screen-sm-min) {
+			font-size: 28px;
+		}
+		@media (min-width: @screen-md-min) {
+			font-size: 28px;
+		}
+		@media (min-width: @screen-lg-min) {
+			font-size: 28px;
+		}
+	}
+}
+.three-in-row {
+	.countdown-amount {
+		@media (min-width: @screen-sm-min) {
+			font-size: 22px;
+		}
+		@media (min-width: @screen-md-min) {
+			font-size: 26px;
+		}
+		@media (min-width: @screen-lg-min) {
+			font-size: 28px;
+		}
+	}
+}
+.five-in-row {
+	.countdown-amount {
+		@media (min-width: @screen-sm-min) {
+			font-size: 14px;
+		}
+		@media (min-width: @screen-md-min) {
+			font-size: 16px;
+		}
+		@media (min-width: @screen-lg-min) {
+			font-size: 20px;
+		}
+	}
+}
+.six-in-row {
+	.countdown-amount {
+		@media (min-width: @screen-sm-min) {
+			font-size: 14px;
+		}
+		@media (min-width: @screen-md-min) {
+			font-size: 16px;
+		}
+		@media (min-width: @screen-lg-min) {
+			font-size: 20px;
+		}
+	}
+}
+.seven-in-row {
+	.countdown-amount {
+		@media (min-width: @screen-sm-min) {
+			font-size: 13px;
+		}
+		@media (min-width: @screen-md-min) {
+			font-size: 14px;
+		}
+		@media (min-width: @screen-lg-min) {
+			font-size: 18px;
+		}
+	}
+}
+.eight-in-row {
+	.countdown-amount {
+		@media (min-width: @screen-sm-min) {
+			font-size: 13px;
+		}
+		@media (min-width: @screen-md-min) {
+			font-size: 14px;
+		}
+		@media (min-width: @screen-lg-min) {
+			font-size: 18px;
+		}
+	}
+}
+.product-preview__image:hover .countdown_box {
+	display: none
+}

@@ -1,0 +1,61 @@
+.options-swatch {
+	margin: 0 0 @line-margin 0;
+	padding: 0;
+	list-style: none;
+	li {
+		display: inline-block;
+		width: 24px;
+		height: 23px;
+		border-width: 2px;
+		border-style: solid;
+//		border-color: #fff;
+		cursor: pointer;
+		font-size: 11px;
+		line-height: 15px;
+		text-align:center;
+		.drop-shadow (0,0,1px,0,0.25);
+		&:hover {
+			.mdShadow(1);
+		}
+	}
+	img {
+		width:100%;
+		height: 100%;
+	}
+	&--lg {
+		li {
+			width: 34px;
+			height: 32px;
+			border-width: 3px;
+			font-size: 11px;
+			line-height: 22px;
+		}
+	}
+	&--size {
+		li {
+			padding: 0 !important;
+			line-height: 19px;
+		}
+		&.options-swatch--lg {
+			li {
+				line-height: 26px;
+			}
+		}
+	}
+
+}
+.color-icon {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 8px;
+	cursor: pointer;
+	font-size: 11px;
+	line-height: 15px;
+	text-align:center;
+	vertical-align: text-top;
+	img {
+		width:100%;
+		height: 100%;
+	}
+}

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Basic -->
+<meta charset="utf-8">
+<title>WellDone - Responsive HTML5 Template 1.0.0</title>
+<meta name="keywords" content="HTML5 Template" />
+<meta name="description" content="WellDone - Responsive HTML5 Template">
+<meta name="author" content="etheme.com">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Web Fonts  -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+<!-- Icon Fonts  -->
+<link rel="stylesheet" href="font/style.css">
+<!-- Vendor CSS -->
+<link rel="stylesheet" href="vendor/waves/waves.css">
+<link rel="stylesheet" href="vendor/slick/slick.css">
+<link rel="stylesheet" href="vendor/slick/slick-theme.css">
+<link rel="stylesheet" href="vendor/bootstrap-select/bootstrap-select.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-colors.css">
+<!-- Custom Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+<!-- Head Libs -->
+
+<!--[if IE]>
+        <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+<!--[if lte IE 8]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+        <![endif]-->
+
+<!-- Modernizr -->
+<script src="vendor/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+<div id="loader-wrapper" class="loader-off">
+  <div id="loader"></div>
+</div>
+<!-- Modal Search -->
+<div class="overlay overlay-scale">
+  <button type="button" class="overlay-close"> ✕ </button>
+  <div class="overlay__content">
+    <form id="search-form" class="search-form outer" action="#" method="post">
+      <div class="input-group input-group--wd">
+        <input type="text" class=" input--full" placeholder="search text here ...">
+        <span class="input-group__bar"></span> </div>
+      <button class="btn btn--wd text-uppercase wave waves-effect">Search</button>
+    </form>
+  </div>
+</div>
+<!-- / end Modal Search -->
+<div class="wrapper"> 
+  <!-- Header section -->
+  <header class="header header--sticky">
+    <div class="header-line hidden-xs">
+      <div class="container">
+        <div class="pull-left">
+          <div class="social-links social-links--colorize">
+            <ul>
+              <li class="social-links__item"><a class="icon icon-facebook" href="#"></a></li>
+              <li class="social-links__item"><a class="icon icon-twitter" href="#"></a></li>
+              <li class="social-links__item"><a class="icon icon-google" href="#"></a></li>
+              <li class="social-links__item"><a class="icon icon-pinterest" href="#"></a></li>
+              <li class="social-links__item"><a class="icon icon-mail" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pull-right">
+          <div class="user-links">
+            <ul>
+              <li class="user-links__item"><a href="#">Sign In</a></li>
+              <li class="user-links__item"><a href="#">Register</a></li>
+              <li  class="user-links__item user-links__item--separate"><a href="#" class="color-twitter">TWITTER</a> / <a href="#" class="color-facebook">FACEBOOK</a> LOGIN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__dropdowns-container">
+      <div class="header__dropdowns">
+        <div class="header__search pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button search-open"
+><span class="icon icon-search"></span></a> </div>
+        <div class="header__cart pull-left"><span class="header__cart__indicator hidden-xs">$0.00</span>
+          <div class="dropdown pull-right"><a href="#" class="btn dropdown-toggle btn--links--dropdown header__cart__button header__dropdowns__button" data-toggle="dropdown"><span class="icon icon-bag-alt"></span><span class="badge badge--menu">2</span></a>
+            <div class="dropdown-menu animated fadeIn shopping-cart" role="menu">
+              <div class="shopping-cart__settings"><a href="#" class="icon icon-gear"></a></div>
+              <div class="shopping-cart__top text-uppercase">Your Cart(2)</div>
+              <ul>
+                <li class='shopping-cart__item'>
+                  <div class="shopping-cart__item__image pull-left"><a href="#"><img src="images/products/product.jpg" alt=""/></a></div>
+                  <div class="shopping-cart__item__info">
+                    <div class="shopping-cart__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Fast Seconds Knit White</a></h2>
+                    </div>
+                    <div class="shopping-cart__item__info__option">Color: Blue</div>
+                    <div class="shopping-cart__item__info__option">Size: Small</div>
+                    <div class="shopping-cart__item__info__price">$84.00</div>
+                    <div class="shopping-cart__item__info__qty">Qty:1</div>
+                    <div class="shopping-cart__item__info__delete"><a href="#" class="icon icon-clear"></a></div>
+                  </div>
+                </li>
+                <li class='shopping-cart__item'>
+                  <div class="shopping-cart__item__image pull-left"><a href="#"><img src="images/products/product.jpg" alt=""/></a></div>
+                  <div class="shopping-cart__item__info">
+                    <div class="shopping-cart__item__info__title">
+                      <h2 class="text-uppercase"><a href="#">Fast Seconds Knit White</a></h2>
+                    </div>
+                    <div class="shopping-cart__item__info__option">Color: Blue</div>
+                    <div class="shopping-cart__item__info__option">Size: Small</div>
+                    <div class="shopping-cart__item__info__price">$84.00</div>
+                    <div class="shopping-cart__item__info__qty">Qty:1</div>
+                    <div class="shopping-cart__item__info__delete"><a href="#" class="icon icon-clear"></a></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="shopping-cart__bottom">
+                <div class="pull-left">Subtotal: <span class="shopping-cart__total"> $130.00</span></div>
+                <div class="pull-right">
+                  <button class="btn btn--wd text-uppercase">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown pull-right"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown"><span class="icon icon-dots"></span></a>
+          <ul class="dropdown-menu ul-row animated fadeIn" role="menu">
+            <li class='li-col currency'>
+              <h4>Currency</h4>
+              <ul>
+                <li class="currency__item active"><a href="#"><span>$</span>US Dollar</a></li>
+                <li class="currency__item"><a href="#"><span>€</span>Euro</a></li>
+                <li class="currency__item"><a href="#"><span>£</span>British Pound</a></li>
+                <li class="currency__item"><a href="#"><span>¥</span>Japanese Yen</a></li>
+                <li class="currency__item"><a href="#"><span>₹</span>Indian Rupee</a></li>
+              </ul>
+            </li>
+            <li class='li-col languages languages--flag'>
+              <h4>Language</h4>
+              <ul>
+                <li class="languages__item active"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/gb.png" alt=""/></span><span class="languages__item__label">En</span></a></li>
+                <li class="languages__item"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/de.png" alt=""/></span><span class="languages__item__label">De</span></a></li>
+                <li class="languages__item"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/fr.png" alt=""/></span><span class="languages__item__label">Fr</span></a></li>
+              </ul>
+            </li>
+            <li class='li-col list-user-menu'>
+              <h4>My Account</h4>
+              <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Compare</a></li>
+                <li><a href="#">Checkout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-wd" id="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" id="slide-nav"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <!--  Logo  --> <a class="logo" href="index.html"> <img class="logo-default" src="images/logo.png" alt=""/> <img class="logo-mobile" src="images/logo-mobile.png" alt=""/> <img class="logo-transparent" src="images/logo-transparent.png" alt=""/> </a> 
+          <!-- End Logo --> 
+        </div>
+        <div class="pull-left search-focus-fade" id="slidemenu">
+          <div class="slidemenu-close visible-xs">✕</div>
+          <ul class="nav navbar-nav">     
+            <li> <a href="index.html" class="dropdown-toggle"><span class="link-name">Home</span><span class="caret caret--dots"></span></a>
+              <ul class="dropdown-menu animated fadeIn" role="menu">
+                <li><a href="index-layout1.html">SwimWear Layout</a></li>
+                <li><a href="index-layout2.html">Flowers Layout</a></li>
+                <li><a href="index-layout3.html">Travel Layout</a></li>
+                <li><a href="index-layout4.html">IShop Layout</a></li>
+                <li><a href="index-layout5.html">Medicine Layout</a></li>
+                <li><a href="index-layout6.html">Gifts Store Layout</a></li>
+                <li><a href="index-layout7.html">Toy Store Layout</a></li>
+                <li><a href="index-layout8.html">Sport Layout</a></li>
+              </ul>
+            </li>
+            <li> <a href="index.html" class="dropdown-toggle"><span class="link-name">Layouts</span><span class="caret caret--dots"></span></a>
+              <ul class="dropdown-menu animated fadeIn" role="menu">
+                <li><a href="index.html">Default</a></li>
+                <li><a href="index-boxed.html">Boxed</a></li>
+                <li><a href="index-full.html">FullWidth</a></li>
+                <li><a href="index-tranparent-header.html">Transparent Header</a></li>
+                <li><a href="index-landing-banners.html">Landing Banners</a></li>
+                <li><a href="index-landing-category.html">Landing Category</a></li>
+                <li><a href="index-landing-content.html">Landing Content</a></li>
+                <li><a href="index-vertical-megamenu.html">Vertical Megamenu</a></li>
+                <li><a href="index-art-catalogue.html">Art catalogue</a></li>
+                <li><a href="index-original.html">Original</a></li>
+                <li><a href="index-intro.html">Intro</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="index-layout1.html">SwimWear Layout</a></li>
+                <li><a href="index-layout2.html">Flowers Layout</a></li>
+                <li><a href="index-layout3.html">Travel Layout</a></li>
+                <li><a href="index-layout4.html">IShop Layout</a></li>
+                <li><a href="index-layout5.html">Medicine Layout</a></li>
+                <li><a href="index-layout6.html">Gifts Store Layout</a></li>
+                <li><a href="index-layout7.html">Toy Store Layout</a></li>
+                <li><a href="index-layout8.html">Sport Layout</a></li>
+              </ul>
+            </li>
+<li><a href="blog.html"  class="dropdown-toggle"><span class="link-name">BLOG</span><span class="caret caret--dots"></span></a>
+              <ul class="dropdown-menu animated fadeIn" role="menu">
+                <li><a href="blog.html">Blog Posts</a></li>
+                <li><a href="blogpost.html">Blog Post</a></li>
+                <li><a href="blog-right-column.html">Blog With Column</a></li>
+              </ul>
+            </li>
+            <li><a href="listing.html"  class="dropdown-toggle"><span class="link-name">SHOP</span><span class="caret caret--dots"></span></a>
+              <ul class="dropdown-menu animated fadeIn" role="menu">
+                <li><a href="listing.html">Listing</a></li>
+                <li><a href="listing-open-filter.html">Listing Left Column</a></li>
+                <li><a href="product.html">Product Default</a></li>
+                <li><a href="product-sticky.html">Product Sticky Info</a></li>
+                <li><a href="product-simple.html">Product Simple</a></li>
+              </ul>
+            </li>
+            <li class="menu-large"><a href="listing.html" class="dropdown-toggle"><span class="link-name">CATEGORY</span><span class="caret caret--dots"></span></a>
+              <div class="dropdown-menu megamenu animated fadeIn">
+                <div class="container">
+                  <ul class="megamenu__columns">
+                    <li class="megamenu__columns__top-block text-uppercase">
+                      <ul>
+                        <li><span class="icon icon-box icon--lg"></span><a href="#">GIFTS EXCLUSIVE</a></li>
+                        <li><span class="icon icon-sales-alt icon--lg"></span><a href="#">OFFERS</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Coats</a></li>
+                        <li class="level2"><a href="listing.html">Club Dresses</a></li>
+                        <li class="level2"><a href="listing.html">Evening Dresses</a></li>
+                        <li class="level2"><a href="listing.html">Prom Dresses</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Dresses</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #1</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #2</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #3</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Jackets</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #4</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #5</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #6</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Jeans</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #7</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #8</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #9</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Jumpsuits</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #10</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #11</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #12</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Lingerie</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #13</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #14</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Pants</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #15</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #16</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #17</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Shorts</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #18</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #19</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #20</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Skirts</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #21</a></li>
+                        <li class="level2"><a href="listing.html">Empty category #22</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Sweaters</a></li>
+                      </ul>
+                    </li>
+                    <li class="level-menu level1">
+                      <ul>
+                        <li class="title"><a href="listing.html">Tops</a></li>
+                      </ul>
+                    </li>
+                    <li class="megamenu__columns__bottom-block text-uppercase">
+                      <ul>
+                        <li><span class="icon icon-bag icon--lg"></span><a href="#">SPECIAL OFFER</a></li>
+                        <li><span class="icon icon-shop-label icon--lg"></span><a href="#">UP TO 50% OFF DISCOUNTS</a></li>
+                      </ul>
+                    </li>
+                    <li class="megamenu__columns__side-image"><img src="images/img-megamenu.jpg" alt="Megamenu Image"> </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="gallery.html" class="wave"><span class="link-name">Gallery</span></a></li>
+            <li><a href="about.html" class="dropdown-toggle"><span  class="link-name">Pages</span><span class="badge badge--menu">!</span><span class="caret caret--dots"></span></a>
+              <ul class="dropdown-menu animated fadeIn" role="menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="create-account.html">Create Account</a></li>
+                <li><a href="logination.html">Logination</a></li>
+              </ul>
+            </li>
+            <li class="menu-large"><a href="#" class="dropdown-toggle"><span class="link-name">BUY THEME!</span><span class="caret caret--dots"></span></a>
+              <div class="dropdown-menu megamenu animated fadeIn">
+                <div class="container">
+                  <div class="row megamenu__content">
+                    <div class="col-sm-4">
+                      <div class="text-center"><a href="#"><img src="images/wd-present-01.jpg" class="img-responsive" alt="welldone"></a>
+                        <div class="text-uppercase"><a href="#">More than just responsive</a></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="text-center"><a href="#"><img src="images/wd-present-02.jpg" class="img-responsive" alt="welldone"></a>
+                        <div class="text-uppercase"><a href="#">Page builder. Freedom - create your own layout</a></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="text-center"><a href="#"><img src="images/wd-present-03.jpg" class="img-responsive" alt="welldone"></a>
+                        <div class="text-uppercase"><a href="#">Premium plugins/extensions s
+                          that are included for FREE </a></div>
+                        (Slider Revolution, Colour swatch, Cloud Zoom, Blog)<br>
+                        <br>
+                      </div>
+                    </div>
+                    <div class="text-center"><a class="btn btn--wd">BUY THEME</a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="pageContent"> 
+    
+    <!-- Breadcrumb section -->
+    
+    <section class="breadcrumbs  hidden-xs">
+      <div class="container">
+        <ol class="breadcrumb breadcrumb--wd pull-left">
+          <li><a href="#">Home</a></li>
+          <li class="active">Frequently Asked Questions</li>
+        </ol>
+      </div>
+    </section>
+    
+    <!-- Content section -->
+    <section class="content">
+      <div class="container">
+        <h2 class="text-uppercase">Frequently Asked Questions</h2>
+        <div class="panel-group" id="sitemap">
+          <div class="panel panel-default" role="tablist">
+            <div class="panel-heading" role="tab">
+              <h4 class="panel-title"> <a role="button" data-toggle="collapse" href="#collapseOne"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit </a> </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+              <div class="panel-body">
+                <p> Fusce eu dui. Integer vel nibh sit amet turpis vulputate aliquet. Phasellus id nisi vitae odio pretium aliquam. Pellentesque a leo. Donec consequat lectus sed felis. Quisque vestibulum massa. Nulla ornare. Nulla libero. Donec et mi eu massa ultrices scelerisque. Nullam ac nisi non eros gravida venenatis. Ut euismod, turpis sollicitudin lobortis pellentesque, libero massa dapibus dui, eu dictum justo urna et mi. Integer dictum est vitae sem. Vestibulum justo. Nulla mauris ipsum, convallis ut, vestibulum eu, tincidunt vel, nisi. </p>
+                <p> Curabitur molestie euismod erat. Proin eros odio, mattis rutrum, pulvinar et, egestas vitae, magna. Integer semper, velit ut interdum malesuada, diam dolor pellentesque lacus, vitae commodo orci nec, dolor. Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac commodo iaculis, mi risus sagittis odio, vel ultrices enim sem ut pede. Aenean quam. Nulla neque purus, ullamcorper nec, eleifend at, fermentum ut, turpis. Mauris et ligula quis erat dignissim imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh. </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default" role="tablist">
+            <div class="panel-heading" role="tab">
+              <h4 class="panel-title"> <a role="button" data-toggle="collapse" href="#collapseTwo">Proin eros odio, mattis rutrum, pulvinar et, egestas vitae, magna</a> </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel">
+              <div class="panel-body">
+                <p> Fusce eu dui. Integer vel nibh sit amet turpis vulputate aliquet. Phasellus id nisi vitae odio pretium aliquam. Pellentesque a leo. Donec consequat lectus sed felis. Quisque vestibulum massa. Nulla ornare. Nulla libero. Donec et mi eu massa ultrices scelerisque. Nullam ac nisi non eros gravida venenatis. Ut euismod, turpis sollicitudin lobortis pellentesque, libero massa dapibus dui, eu dictum justo urna et mi. Integer dictum est vitae sem. Vestibulum justo. Nulla mauris ipsum, convallis ut, vestibulum eu, tincidunt vel, nisi. </p>
+                <p> Curabitur molestie euismod erat. Proin eros odio, mattis rutrum, pulvinar et, egestas vitae, magna. Integer semper, velit ut interdum malesuada, diam dolor pellentesque lacus, vitae commodo orci nec, dolor. Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac commodo iaculis, mi risus sagittis odio, vel ultrices enim sem ut pede. Aenean quam. Nulla neque purus, ullamcorper nec, eleifend at, fermentum ut, turpis. Mauris et ligula quis erat dignissim imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh. </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default" role="tablist">
+            <div class="panel-heading" role="tab">
+              <h4 class="panel-title"> <a role="button" data-toggle="collapse" href="#collapseThree">Mauris et ligula quis erat dignissim imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh</a> </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel">
+              <div class="panel-body">
+                <p> Fusce eu dui. Integer vel nibh sit amet turpis vulputate aliquet. Phasellus id nisi vitae odio pretium aliquam. Pellentesque a leo. Donec consequat lectus sed felis. Quisque vestibulum massa. Nulla ornare. Nulla libero. Donec et mi eu massa ultrices scelerisque. Nullam ac nisi non eros gravida venenatis. Ut euismod, turpis sollicitudin lobortis pellentesque, libero massa dapibus dui, eu dictum justo urna et mi. Integer dictum est vitae sem. Vestibulum justo. Nulla mauris ipsum, convallis ut, vestibulum eu, tincidunt vel, nisi. </p>
+                <p> Curabitur molestie euismod erat. Proin eros odio, mattis rutrum, pulvinar et, egestas vitae, magna. Integer semper, velit ut interdum malesuada, diam dolor pellentesque lacus, vitae commodo orci nec, dolor. Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac commodo iaculis, mi risus sagittis odio, vel ultrices enim sem ut pede. Aenean quam. Nulla neque purus, ullamcorper nec, eleifend at, fermentum ut, turpis. Mauris et ligula quis erat dignissim imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh. </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default" role="tablist">
+            <div class="panel-heading" role="tab">
+              <h4 class="panel-title"> <a role="button" data-toggle="collapse" href="#collapseFour">Nulla ornare. Nulla libero. Donec et mi eu massa ultrices scelerisque. Nullam ac nisi non eros gravida venenatis</a> </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel">
+              <div class="panel-body">
+                <p> Fusce eu dui. Integer vel nibh sit amet turpis vulputate aliquet. Phasellus id nisi vitae odio pretium aliquam. Pellentesque a leo. Donec consequat lectus sed felis. Quisque vestibulum massa. Nulla ornare. Nulla libero. Donec et mi eu massa ultrices scelerisque. Nullam ac nisi non eros gravida venenatis. Ut euismod, turpis sollicitudin lobortis pellentesque, libero massa dapibus dui, eu dictum justo urna et mi. Integer dictum est vitae sem. Vestibulum justo. Nulla mauris ipsum, convallis ut, vestibulum eu, tincidunt vel, nisi. </p>
+                <p> Curabitur molestie euismod erat. Proin eros odio, mattis rutrum, pulvinar et, egestas vitae, magna. Integer semper, velit ut interdum malesuada, diam dolor pellentesque lacus, vitae commodo orci nec, dolor. Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac commodo iaculis, mi risus sagittis odio, vel ultrices enim sem ut pede. Aenean quam. Nulla neque purus, ullamcorper nec, eleifend at, fermentum ut, turpis. Mauris et ligula quis erat dignissim imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default" role="tablist">
+            <div class="panel-heading" role="tab">
+              <h4 class="panel-title"> <a role="button" data-toggle="collapse" href="#collapseFive">Aenean quam. Nulla neque purus, ullamcorper nec, eleifend at, fermentum ut, turpis</a> </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel">
+              <div class="panel-body">
+                <p> Fusce eu dui. Integer vel nibh sit amet turpis vulputate aliquet. Phasellus id nisi vitae odio pretium aliquam. Pellentesque a leo. Donec consequat lectus sed felis. Quisque vestibulum massa. Nulla ornare. Nulla libero. Donec et mi eu massa ultrices scelerisque. Nullam ac nisi non eros gravida venenatis. Ut euismod, turpis sollicitudin lobortis pellentesque, libero massa dapibus dui, eu dictum justo urna et mi. Integer dictum est vitae sem. Vestibulum justo. Nulla mauris ipsum, convallis ut, vestibulum eu, tincidunt vel, nisi. </p>
+                <p> Curabitur molestie euismod erat. Proin eros odio, mattis rutrum, pulvinar et, egestas vitae, magna. Integer semper, velit ut interdum malesuada, diam dolor pellentesque lacus, vitae commodo orci nec, dolor. Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac commodo iaculis, mi risus sagittis odio, vel ultrices enim sem ut pede. Aenean quam. Nulla neque purus, ullamcorper nec, eleifend at, fermentum ut, turpis. Mauris et ligula quis erat dignissim imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh. </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default" role="tablist">
+            <div class="panel-heading" role="tab">
+              <h4 class="panel-title"> <a role="button" data-toggle="collapse" href="#collapseSix">Donec et mi eu massa ultrices scelerisque. Nullam ac nisi non eros gravida venenatis. </a> </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel">
+              <div class="panel-body">
+                <p> Fusce eu dui. Integer vel nibh sit amet turpis vulputate aliquet. Phasellus id nisi vitae odio pretium aliquam. Pellentesque a leo. Donec consequat lectus sed felis. Quisque vestibulum massa. Nulla ornare. Nulla libero. Donec et mi eu massa ultrices scelerisque. Nullam ac nisi non eros gravida venenatis. Ut euismod, turpis sollicitudin lobortis pellentesque, libero massa dapibus dui, eu dictum justo urna et mi. Integer dictum est vitae sem. Vestibulum justo. Nulla mauris ipsum, convallis ut, vestibulum eu, tincidunt vel, nisi. </p>
+                <p> Curabitur molestie euismod erat. Proin eros odio, mattis rutrum, pulvinar et, egestas vitae, magna. Integer semper, velit ut interdum malesuada, diam dolor pellentesque lacus, vitae commodo orci nec, dolor. Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac commodo iaculis, mi risus sagittis odio, vel ultrices enim sem ut pede. Aenean quam. Nulla neque purus, ullamcorper nec, eleifend at, fermentum ut, turpis. Mauris et ligula quis erat dignissim imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Content section --> 
+  </div>
+  <footer class="footer">
+    <div class="footer__links hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="h-links-list">
+              <ul>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Search Terms</a></li>
+                <li><a href="#">Orders and Returns</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">RSS</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="h-links-list text-right">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Customer Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__column-links">
+      <div class="back-to-top"> <a href="#top" class="btn btn--round btn--round--lg"><span class="icon-arrow-up"></span></a></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 hidden-xs hidden-sm"> <!--  Logo  --> <a class="logo logo--footer" href="index.html"> <img src="images/logo-transparent.png" alt=""/> </a> 
+            <!-- End Logo --> </div>
+          <div class="col-sm-3 col-md-2 mobile-collapse">
+            <h5 class="title text-uppercase mobile-collapse__title">Information </h5>
+            <div class="v-links-list mobile-collapse__content">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Privacy Notice</a></li>
+                <li><a href="#">Conditions of Use</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-2 mobile-collapse">
+            <h5 class="title text-uppercase mobile-collapse__title">Service</h5>
+            <div class="v-links-list mobile-collapse__content">
+              <ul>
+                <li><a href="#">Online support</a></li>
+                <li><a href="#">Help & FAQs</a></li>
+                <li><a href="#">Call Center</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-2 mobile-collapse">
+            <h5 class="title text-uppercase mobile-collapse__title">My account</h5>
+            <div class="v-links-list mobile-collapse__content">
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order history</a></li>
+                <li><a href="#">Advanced search</a></li>
+                <li><a href="#">Reviews</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 mobile-collapse mobile-collapse--last">
+            <h5 class="title text-uppercase mobile-collapse__title">Company Info</h5>
+            <div class="v-links-list mobile-collapse__content">
+              <ul>
+                <li class="icon icon-home">7563 St. Vincent Place, Glasgow</li>
+                <li class="icon icon-telephone">321321321, 321321321</li>
+                <li class="icon icon-mail"><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
+                <li class="icon icon-skype"><a href="#">shop.test</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    <div class="footer__subscribe">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 col-md-6">
+		  	  <div id="subscribeSuccess">
+				<p>Your email was added successfully!</p>
+			  </div>
+			  <div id="subscribeError">
+				<p>Something went wrong, try refreshing and submitting the form again.</p>
+			  </div>                
+            <form id="subscribe-form" class="subscribe-form" method="post" novalidate>
+              <label class="subscribe-form__label text-uppercase pull-left">Subscribe</label>
+              <input type="text" class="subscribe-form__input input--wd" placeholder="Your e-mail address" name="subscribemail">
+              <button type="submit" class="btn btn--wd text-uppercase wave"><span class="hidden-xs">Subscribe</span><span class="icon icon-mail-fill visible-xs"></span></button>
+            </form>
+          </div>
+          <div class="col-sm-5 col-md-6">
+            <div class="social-links social-links--colorize social-links--large">
+              <ul>
+                <li class="social-links__item"><a class="icon icon-facebook" href="http://www.facebook.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-twitter" href="http://www.twitter.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-google" href="http://www.google.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-pinterest" href="http://www.pinterest.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-mail" href="mailto:mail@google.com"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="footer__settings visible-xs">
+      <div class="container text-center">
+        <div class="dropdown pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown" aria-expanded="false"><span class="header__dropdowns__button__symbol">$</span></a>
+          <ul class="dropdown-menu animated fadeIn" role="menu">
+            <li class="currency__item currency__item--active"><a href="#">$ USA Dollar</a></li>
+            <li class="currency__item"><a href="#">€ Euro</a></li>
+            <li class="currency__item"><a href="#">£ British Pound</a></li>
+          </ul>
+        </div>
+        <div class="dropdown pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown" aria-expanded="false"><span class="flag"><img src="images/flags/gb.png" alt=""></span></a>
+          <ul class="dropdown-menu animated fadeIn languages languages--flag" role="menu">
+            <li class="languages__item languages__item--active"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/gb.png" alt=""></span><span class="languages__item__label">En</span></a></li>
+            <li class="languages__item"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/de.png" alt=""></span><span class="languages__item__label">De</span></a></li>
+            <li class="languages__item"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/fr.png" alt=""></span><span class="languages__item__label">Fr</span></a></li>
+          </ul>
+        </div>
+        <div class="dropdown pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown" aria-expanded="false">Account</a>
+          <ul class="dropdown-menu animated fadeIn" role="menu">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Compare</a></li>
+            <li><a href="#">Checkout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="pull-left text-uppercase">© 2016 <a href="#">Welldone :)</a>. All Rights Reserved. </div>
+        <div class="pull-left text-center">
+          <label>Select Store: </label>
+          <div class="select-wrapper">
+            <select class="select--wd select--wd--xs">
+              <option>Store Name 1</option>
+              <option>Store Name 2</option>
+              <option>Store Name 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="pull-right text-uppercase text-right">with love <span class="icon-favorite color-heart"></span> from <a href="http://themeforest.net/user/etheme">etheme</a></div>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- Vendor --> 
+<!-- jQuery 1.10.1--> 
+<script src="vendor/jquery/jquery.js"></script> 
+<!-- Bootstrap 3--> 
+<script src="vendor/bootstrap/bootstrap.min.js"></script> 
+<!-- Specific Page Vendor --> 
+<script src="vendor/waves/waves.min.js"></script> 
+<script src="vendor/slick/slick.min.js"></script> 
+<script src="vendor/bootstrap-select/bootstrap-select.min.js"></script> 
+<script src="vendor/parallax/jquery.parallax-1.1.3.js"></script> 
+<script src="vendor/waypoints/jquery.waypoints.min.js"></script> 
+<script src="vendor/waypoints/sticky.min.js"></script> 
+<script src="vendor/doubletaptogo/doubletaptogo.js"></script> 
+<script src="vendor/elevatezoom/jquery.elevatezoom.js"></script> 
+<script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script><script src="vendor/countdown/jquery.plugin.min.js"></script> 
+<script src="vendor/countdown/jquery.countdown.min.js"></script> 
+<!-- jQuery form validation --> 
+<script src="vendor/form/jquery.form.js"></script> 
+<script src="vendor/form/jquery.validate.min.js"></script> 
+<!-- Custom --> 
+<script src="js/custom.js"></script> 
+</body>
+</html>

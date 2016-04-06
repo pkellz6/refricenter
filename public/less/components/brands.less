@@ -1,0 +1,37 @@
+.brands {
+	&__item {
+		img {
+			border-radius:  4px;
+			.mdShadow(1);
+			.transition (box-shadow, 300ms);
+		}		
+		&:hover {
+			img {
+				.mdShadow(2);
+			}		
+		}
+
+	}
+	.product-category-carousel .slick-slide {
+	  margin: 0 15px;
+	}
+}
+.brands-carousel {
+	.slick-slide {
+		  margin: 2px 15px 10px;
+	}
+	&.slick-slider {
+	  margin: 0 -15px;
+	}
+	.slick-prev, .slick-next  {
+		margin-top: -16px;
+		@media (max-width: @screen-xs-max) {
+			margin-top: -67px
+		}
+	}
+	@media (max-width: @screen-xs-max) {
+		&.nav-inside .slick-prev, &.nav-inside .slick-next  {
+			margin-top: -67px !important;
+		}
+	}
+}

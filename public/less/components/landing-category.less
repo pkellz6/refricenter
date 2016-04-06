@@ -1,0 +1,113 @@
+.category-block {
+//	background: url('../images/category-bg.png') no-repeat center bottom;
+	margin-bottom: 55px;
+	@media (max-width: @screen-xs-max) {
+		width: 100%;
+	}
+	&__title {
+		position: absolute;
+		z-index: 0;
+		width: 100%;
+		left: 0;
+		top: 0;
+		font-size: 120px;
+		line-height: 120px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+//		color: @color-white;
+		@media (max-width: @screen-xs-max) {
+			font-size: 70px;
+		}
+	}
+	&__list {
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		float: right;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: 190px;
+		.vertical-align;
+		@media (max-width: @screen-xs-max) {
+			text-align: right;
+			padding-right: 15px;
+		}
+		li {
+			padding: 0 0 10px;
+		}
+		li > a {
+			font-size: 1.231em;
+			line-height: 1.25em;
+			text-transform: uppercase;
+			text-decoration: none;
+			@media (max-width: @screen-xs-max) {
+				font-size: 1em;
+			}
+			&:hover, &.active {
+				font-weight: bold;
+			}
+		}
+	}
+	&__image {
+		position: relative;
+		z-index: 1;
+		float: left;
+		text-align: center;
+		margin: 25px 0 0 125px;
+		@media (max-width: @screen-md-max) and (min-width: @screen-md-min)  {
+			margin-left: 50px;
+		}
+		@media (max-width: @screen-sm-max) and (min-width: @screen-sm-min)  {
+			margin-left: 100px;
+		}		
+		@media (max-width: @screen-xs-max) {
+			margin-left: 0;
+			max-width: 70%;
+		}
+		&__loader {
+			position: absolute;
+			.vertical-align;
+			left: 0;
+			right: 0;
+		}
+		img {
+			position: absolute;
+			left:0;
+			top: 0;
+			z-index:1;
+			opacity: 0;
+			/*.transition (opacity, 400ms);*/
+			width: 100%;
+			&.active {
+				opacity: 1;
+				position: relative;
+			}
+		}
+	}
+	&--right {
+		.category-block__list {
+			right: auto;
+			left: 0;
+			text-align: right;
+			@media (max-width: @screen-xs-max) {
+				text-align: left;
+				padding-left: 15px;
+			}
+		}
+		.category-block__image {
+			float: right;
+			margin: 25px 125px 0 0;
+			@media (max-width: @screen-md-max) and (min-width: @screen-md-min)  {
+				margin-right: 50px;
+			}
+			@media (max-width: @screen-sm-max) and (min-width: @screen-sm-min)  {
+				margin-right: 100px;
+			}		
+			@media (max-width: @screen-xs-max) {
+				margin-right: 0;
+			}
+		}
+	}
+}

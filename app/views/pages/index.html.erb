@@ -1,717 +1,1351 @@
-<!-- Alternate Body Classes: .modern and .vintage -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Basic -->
+        <meta charset="utf-8">
+        <title>WellDone - Responsive HTML5 Template 1.0.0</title>
+        <meta name="keywords" content="HTML5 Template" />
+        <meta name="description" content="WellDone - Responsive HTML5 Template">
+        <meta name="author" content="etheme.com">
+        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Web Fonts  -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+        <!-- Icon Fonts  -->
+        <link rel="stylesheet" href="font/style.css">
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="vendor/waves/waves.css">
+        <link rel="stylesheet" href="vendor/slick/slick.css">
+        <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+        <link rel="stylesheet" href="vendor/bootstrap-select/bootstrap-select.css">
+                <!-- Parallax carousel / CSS -->
+        <link rel="stylesheet" href="vendor/parallax-carousel/pcarousel.min.css" >
+        <!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-colors.css">
+<!-- Custom Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- Navigation -->
-    <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/logosmall.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <!-- <a class="page-scroll" href="#work">Products</a> -->
-                        <a class="page-scroll" href="#product">Products</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+        <link rel="stylesheet" type="text/css" href="vendor/rs-plugin/css/settings.css" media="screen" />
+        <!-- Head Libs -->
+        <!--[if IE]>
+        <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+        <!--[if lte IE 8]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+        <![endif]-->
+        <!-- Modernizr -->
+        <script src="vendor/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <div id="loader-wrapper" class="loader-off">
+            <div id="loader"></div>
         </div>
-        <!-- /.container -->
-    </nav>
-    <header style="background-image: url('img/house3.png');">
-        <!-- <div class="intro-content">
-            <img src="" class="img-responsive img-centered" alt="">
-            <div class="brand-name"><img src="img/logofull2.png"></div>
-            <hr class="colored">
-            <div class="brand-name-subtext"><b>Miami, FL</b></div>
-        </div> -->
-        <div class="scroll-down">
-            <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
-        </div>
-    </header>
-    <section id="about">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-lg-12 wow fadeIn">
-                    <h1><img src="img/logofull3.png"></h1>
-                    <div class="brand-name-subtext"><b>Miami, FL</b></div></hr>
-                    <hr class="colored">
-                    <p>Refricenter International has long been committed to being one of <br>South Florida's leading stocking distributors of HVACR equipment, parts and supplies.</p>
-                    <hr class="colored">
-                </div>
-            </div>
-            <div class="row text-center content-row">
-                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".2s">
-                    <div class="about-content">
-                        <i class="fa fa-eye fa-4x"></i>
-                        <h3>Reputation</h3>
-                        <p>Our nine branches are located across South Florida, servicing areas stretching from Miami-Dade County through West Palm Beach.</p>
+        <!-- Modal Search -->
+        <div class="overlay overlay-scale">
+            <button type="button" class="overlay-close"> ✕ </button>
+            <div class="overlay__content">
+                <form id="search-form" class="search-form outer" action="#" method="post">
+                    <div class="input-group input-group--wd">
+                        <input type="text" class=" input--full" placeholder="search text here ...">
+                        <span class="input-group__bar"></span> 
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".4s">
-                    <div class="about-content">
-                        <i class="fa fa-edit fa-4x"></i>
-                        <h3>Leaders</h3>
-                        <p>We serve all South Florida HVACR contractors' needs with our full line of products and services - including our leading brands of A/C equipment - Westinghouse, Philco, LG, Luxaire, and Climate Master. </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".6s">
-                    <div class="about-content">
-                        <i class="fa fa-university fa-4x"></i>
-                        <h3>History</h3>
-                        <p>Refricenter also has affiliate companies located in both Puerto Rico and the Dominican Republic, where they have been market leaders since the 1960's.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".8s">
-                    <div class="about-content">
-                        <i class="fa fa-plane fa-4x"></i>
-                        <h3>International</h3>
-                        <p>As of the beginning of 2013, there are 15 stores located within Puerto Rico and another 15 stores based in the Dominican Republic.</p>
-                    </div>
-                </div>
+                    <button class="btn btn--wd text-uppercase wave waves-effect">Search</button>
+                </form>
             </div>
         </div>
-    </section>
-    <section id="team" class="bg-gray">
-        <div class="container text-center wow fadeIn">
-            <div class="row">
-                <div class="col-lg-12">
-                    <center><img src="img/round.png"></center>
-                    <h2>Our Team</h2>
-                    <hr class="colored">
-                    <p>Our experienced and well staffed export department services all Central and South American countries, the Caribbean, and Mexico. We are backed by the largest and most complete inventory of air conditioning equipment in both 60hz and 50hz under our own renowned brands: TGM, Classic, and Excell. Working in unison with our Traffic department, we make sure that customers' orders are processed quickly and correctly in order to make sure your business keeps moving. </p>
-                    <hr class="colored">
-                </div>
-            </div>
-            <div class="row content-row">
-                <div class="col-lg-12">
-                    <div class="about-carousel">
-                        <div class="col-lg-6 col-xs-12 item">
-                            <img src="img/team5.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-
-
+        <!-- / end Modal Search -->
+        <div class="wrapper">
+            <!-- Header section -->
+            <header class="header header--sticky">
+                <div class="header-line hidden-xs">
+                    <div class="container">
+                        <div class="pull-left">
+                            <div class="social-links social-links--colorize">
+                                <ul>
+                                    <li class="social-links__item"><a class="icon icon-facebook" href="#"></a></li>
+                                    <li class="social-links__item"><a class="icon icon-twitter" href="#"></a></li>
+                                    <li class="social-links__item"><a class="icon icon-google" href="#"></a></li>
+                                    <li class="social-links__item"><a class="icon icon-pinterest" href="#"></a></li>
+                                    <li class="social-links__item"><a class="icon icon-mail" href="#"></a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-xs-12 item">
-                            <img src="img/team4.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-
+                        <div class="pull-right">
+                            <div class="user-links">
+                                <ul>
+                                    <li class="user-links__item"><a href="#">Sign In</a></li>
+                                    <li class="user-links__item"><a href="#">Register</a></li>
+                                    <li  class="user-links__item user-links__item--separate"><a href="#" class="color-twitter">TWITTER</a> / <a href="#" class="color-facebook">FACEBOOK</a> LOGIN</li>
+                                </ul>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <aside class="cta-quote" style="background-image: url('img/north.png');">
-        <div class="container wow fadeIn">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <center><img src="img/logomed.png"></center>
-                    <span class="quote"><strong>We invite you to </strong><span class="text-primary">visit</span> one of our store locations and familiarize yourself with our <span class="text-primary">staff</span> and the over 10,000 items in our <span class="text-primary">inventory</span></span>
-                    <hr class=" colored">
-                    <a class="btn btn-outline-light page-scroll" href="#portfolioModal100" data-toggle="modal">Let's Find It</a>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <section id="product" class="bg-gray">
-        <div class="container text-center wow fadeIn">
-            <center><img src="img/logosmall.png"></center>
-            <h2>Products</h2>
-            <hr class="colored">
-            <p>Take a look at some of the products we carry. Online Store Coming Soon!!</p>
-            <hr class="colored">
-        </div>
-    </section>
-    <section id="products" class="portfolio-carousel wow fadeIn" style="background-image: white;">
-  <!-- First Product category  -->
-        <!--style:  -->
-            <!-- <div class="container-fluid">
-              <div class="row" style="background-image: url('img/ac.png')">
-                  <div class="col-md-6">
-                    <div class="project-details">
-                        <span class="project-name"><b>Brands</span>
-                        <span class="project-description">Refricenter's inventory</b></span>
-                        <hr class="colored">
-
-                      <#%= link_to "View by Category", categories_path, class:"btn btn-outline-light" %> </a>
-                    </div>
-                    </div>
-                  </div>
-                </div>  -->
-                <div class="item"  style="background-image: url('img/ac.png')">
-                  <div class="container-fluid">
-                  <div class="row" >
-                    <div class="col-md-12">
-                      <div class="project-details">
-                          <span class="project-name"><b>Products</span>
-                          <span class="project-description">Refricenter's inventory</b></span>
-                          <hr class="colored">
-
-                        <%= link_to "View by Category", categories_path, class:"btn btn-outline-light" %> </a>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- <div class="container-fluid">
-                    <div class="row" style="background-image: url('img/brands.png')">
-                        <div class="col-md-6">
-                          <div class="project-details">
-                              <span class="project-name"><b>Brands</span>
-                              <span class="project-description">Refricenter's inventory</b></span>
-                              <hr class="colored">
-
-                            <%= link_to "View by Brands", brands_path, class:"btn btn-outline-light" %> </a>
-                          </div>
-                          </div>
-                        </div>
-                      </div> -->
-                </div>
-
-
-
-
-                  <!-- TODO BEFORE   -->
-              <!--  <div class="row">
-                    <div class="col-md-4 col-md-push-8">
-                        <div class="project-details">
-                            <span class="project-name"><b>View our Products</span>
-                            <span class="project-description">Refricenter's inventory</b></span>
-                            <hr class="colored">
-
-                          <%= link_to "Search", categories_path, class:"btn btn-outline-light" %> </a>
-                        </div>
-                    </div>
-
-                </div> -->
-                <!-- <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">Search<i class="fa fa-long-arrow-right fa-fw"></i></a> -->
-
-
-        <!-- <div class="item" style="background-color: white;)">
-            <div class="container-fluid">
-                <div class="row">
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="item" style="background-image: url('img/brands.png')">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-md-push-8">
-                        <div class="project-details">
-                            <span class="project-name"><b>Search by Brand</span>
-                            <span class="project-description">Search Refricenter's inventory by Brand</b></span>
-                            <hr class="colored">
-                            <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">Search<i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-    </section>
-
-    <section id="testimonials" class="testimonials bg-gray">
-        <div class="container text-center wow fadeIn">
-          <h2>Testimonials</h2>
-          <hr class="colored">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="testimonials-carousel">
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p class="lead">"Very honest and dependable highly recommend"</p>
-                                    <!-- <hr class="colored"> -->
-                                    <p class="quote"></p>
-                                    <div class="testimonial-info">
-                                        <div class="testimonial-img">
-                                            <img src="img/james.jpg" class="img-circle img-responsive" alt="">
-                                        </div>
-                                        <div class="testimonial-author">
-                                            <span class="name">James Dalla Rosa</span>
-                                            <p class="small">Volusia County Sheriff's Office</p>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
+                <div class="header__dropdowns-container">
+                    <div class="header__dropdowns">
+                        <div class="header__search pull-left"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button search-open"
+                            ><span class="icon icon-search"></span></a> </div>
+                        <div class="header__cart pull-left">
+                            <span class="header__cart__indicator hidden-xs">$0.00</span>
+                            <div class="dropdown pull-right">
+                                <a href="#" class="btn dropdown-toggle btn--links--dropdown header__cart__button header__dropdowns__button" data-toggle="dropdown"><span class="icon icon-bag-alt"></span><span class="badge badge--menu">2</span></a>
+                                <div class="dropdown-menu animated fadeIn shopping-cart" role="menu">
+                                    <div class="shopping-cart__settings"><a href="#" class="icon icon-gear"></a></div>
+                                    <div class="shopping-cart__top text-uppercase">Your Cart(2)</div>
+                                    <ul>
+                                        <li class='shopping-cart__item'>
+                                            <div class="shopping-cart__item__image pull-left"><a href="#"><img src="images/products/product.jpg" alt=""/></a></div>
+                                            <div class="shopping-cart__item__info">
+                                                <div class="shopping-cart__item__info__title">
+                                                    <h2 class="text-uppercase"><a href="#">Fast Seconds Knit White</a></h2>
+                                                </div>
+                                                <div class="shopping-cart__item__info__option">Color: Blue</div>
+                                                <div class="shopping-cart__item__info__option">Size: Small</div>
+                                                <div class="shopping-cart__item__info__price">$84.00</div>
+                                                <div class="shopping-cart__item__info__qty">Qty:1</div>
+                                                <div class="shopping-cart__item__info__delete"><a href="#" class="icon icon-clear"></a></div>
                                             </div>
+                                        </li>
+                                        <li class='shopping-cart__item'>
+                                            <div class="shopping-cart__item__image pull-left"><a href="#"><img src="images/products/product.jpg" alt=""/></a></div>
+                                            <div class="shopping-cart__item__info">
+                                                <div class="shopping-cart__item__info__title">
+                                                    <h2 class="text-uppercase"><a href="#">Fast Seconds Knit White</a></h2>
+                                                </div>
+                                                <div class="shopping-cart__item__info__option">Color: Blue</div>
+                                                <div class="shopping-cart__item__info__option">Size: Small</div>
+                                                <div class="shopping-cart__item__info__price">$84.00</div>
+                                                <div class="shopping-cart__item__info__qty">Qty:1</div>
+                                                <div class="shopping-cart__item__info__delete"><a href="#" class="icon icon-clear"></a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="shopping-cart__bottom">
+                                        <div class="pull-left">Subtotal: <span class="shopping-cart__total"> $130.00</span></div>
+                                        <div class="pull-right">
+                                            <button class="btn btn--wd text-uppercase">Checkout</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>        <div class="dropdown pull-right"> <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown"><span class="icon icon-dots"></span></a>
+          <ul class="dropdown-menu ul-row animated fadeIn" role="menu">
+            <li class='li-col currency'>
+			  <h4>Currency</h4>
+              <ul>
+                <li class="currency__item active"><a href="#"><span>$</span>US Dollar</a></li>
+                <li class="currency__item"><a href="#"><span>€</span>Euro</a></li>
+                <li class="currency__item"><a href="#"><span>£</span>British Pound</a></li>
+                <li class="currency__item"><a href="#"><span>¥</span>Japanese Yen</a></li>
+                <li class="currency__item"><a href="#"><span>₹</span>Indian Rupee</a></li>
+              </ul>
+            </li>
+            <li class='li-col languages languages--flag'>
+			  <h4>Language</h4>
+              <ul>
+                <li class="languages__item active"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/gb.png" alt=""/></span><span class="languages__item__label">En</span></a></li>
+                <li class="languages__item"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/de.png" alt=""/></span><span class="languages__item__label">De</span></a></li>
+                <li class="languages__item"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/fr.png" alt=""/></span><span class="languages__item__label">Fr</span></a></li>
+              </ul>
+            </li>
+            <li class='li-col list-user-menu'>
+			  <h4>My Account</h4>
+              <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Compare</a></li>
+                <li><a href="#">Checkout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+</div>
+                </div>
+                <nav class="navbar navbar-wd" id="navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" id="slide-nav"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                            <!--  Logo  --> 
+                            <a class="logo" href="index.html"> <img class="logo-default" src="images/logo.png" alt=""/> <img class="logo-mobile" src="images/logo-mobile.png" alt=""/> <img class="logo-transparent" src="images/logo-transparent.png" alt=""/> </a> 
+                            <!-- End Logo --> 
                         </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p class="lead">"My experience was great"</p>
-                                    <!-- <hr class="colored"> -->
-                                    <p class="quote">This place is great for any air conditioning parts you may need. Oswaldo and Tony are great people and are very knowledgable. They'll help you with any problem you have!</p>
-                                    <div class="testimonial-info">
-                                        <div class="testimonial-img">
-                                            <img src="img/esteban.jpg" class="img-circle img-responsive" alt="">
+                        <div class="pull-left search-focus-fade" id="slidemenu">
+                            <div class="slidemenu-close visible-xs">✕</div>
+                            <ul class="nav navbar-nav">     
+            <li> <a href="index.html" class="dropdown-toggle"><span class="link-name">Home</span><span class="caret caret--dots"></span></a>
+              <ul class="dropdown-menu animated fadeIn" role="menu">
+                <li><a href="index-layout1.html">SwimWear Layout</a></li>
+                <li><a href="index-layout2.html">Flowers Layout</a></li>
+                <li><a href="index-layout3.html">Travel Layout</a></li>
+                <li><a href="index-layout4.html">IShop Layout</a></li>
+                <li><a href="index-layout5.html">Medicine Layout</a></li>
+                <li><a href="index-layout6.html">Gifts Store Layout</a></li>
+                <li><a href="index-layout7.html">Toy Store Layout</a></li>
+                <li><a href="index-layout8.html">Sport Layout</a></li>
+              </ul>
+            </li>
+            <li> <a href="index.html" class="dropdown-toggle"><span class="link-name">Layouts</span><span class="caret caret--dots"></span></a>
+              <ul class="dropdown-menu animated fadeIn" role="menu">
+                <li><a href="index.html">Default</a></li>
+                <li><a href="index-boxed.html">Boxed</a></li>
+                <li><a href="index-full.html">FullWidth</a></li>
+                <li><a href="index-tranparent-header.html">Transparent Header</a></li>
+                <li><a href="index-landing-banners.html">Landing Banners</a></li>
+                <li><a href="index-landing-category.html">Landing Category</a></li>
+                <li><a href="index-landing-content.html">Landing Content</a></li>
+                <li><a href="index-vertical-megamenu.html">Vertical Megamenu</a></li>
+                <li><a href="index-art-catalogue.html">Art catalogue</a></li>
+                <li><a href="index-original.html">Original</a></li>
+                <li><a href="index-intro.html">Intro</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="index-layout1.html">SwimWear Layout</a></li>
+                <li><a href="index-layout2.html">Flowers Layout</a></li>
+                <li><a href="index-layout3.html">Travel Layout</a></li>
+                <li><a href="index-layout4.html">IShop Layout</a></li>
+                <li><a href="index-layout5.html">Medicine Layout</a></li>
+                <li><a href="index-layout6.html">Gifts Store Layout</a></li>
+                <li><a href="index-layout7.html">Toy Store Layout</a></li>
+                <li><a href="index-layout8.html">Sport Layout</a></li>
+              </ul>
+            </li>
+<li>
+                                    <a href="blog.html"  class="dropdown-toggle"><span class="link-name">BLOG</span><span class="caret caret--dots"></span></a>
+                                    <ul class="dropdown-menu animated fadeIn" role="menu">
+                                        <li><a href="blog.html">Blog Posts</a></li>
+                                        <li><a href="blogpost.html">Blog Post</a></li>
+                                        <li><a href="blog-right-column.html">Blog With Column</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="listing.html"  class="dropdown-toggle"><span class="link-name">SHOP</span><span class="caret caret--dots"></span></a>
+                                    <ul class="dropdown-menu animated fadeIn" role="menu">
+                                        <li><a href="listing.html">Listing</a></li>
+                                        <li><a href="listing-open-filter.html">Listing Left Column</a></li>
+                                        <li><a href="product.html">Product Default</a></li>
+                                        <li><a href="product-sticky.html">Product Sticky Info</a></li>
+                                        <li><a href="product-simple.html">Product Simple</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-large">
+                                    <a href="listing.html" class="dropdown-toggle"><span class="link-name">CATEGORY</span><span class="caret caret--dots"></span></a>
+                                    <div class="dropdown-menu megamenu animated fadeIn">
+                                        <div class="container">
+                                            <ul class="megamenu__columns">
+                                                <li class="megamenu__columns__top-block text-uppercase">
+                                                    <ul>
+                                                        <li><span class="icon icon-box icon--lg"></span><a href="#">GIFTS EXCLUSIVE</a></li>
+                                                        <li><span class="icon icon-sales-alt icon--lg"></span><a href="#">OFFERS</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Coats</a></li>
+                                                        <li class="level2">
+                                                            <a href="listing.html">Club Dresses</a>
+                                                            <ul class="level-menu__dropdown">
+                                                                <li class="level3">
+                                                                    <a href="listing.html">Empty subcategory #1</a>
+                                                                    <ul class="level-menu__dropdown">
+                                                                        <li class="level3"><a href="listing.html">Empty subcategory #1-1</a></li>
+                                                                        <li class="level3"><a href="listing.html">Empty subcategory #1-2</a></li>
+                                                                        <li class="level3"><a href="listing.html">Empty subcategory #1-3</a></li>
+                                                                        <li class="level3"><a href="listing.html">Empty subcategory #1-4</a></li>
+                                                                        <li class="level3"><a href="listing.html">Empty subcategory #1-5</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="level3"><a href="listing.html">Empty subcategory #2</a></li>
+                                                                <li class="level3"><a href="listing.html">Empty subcategory #3</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="level2"><a href="listing.html">Evening Dresses</a></li>
+                                                        <li class="level2"><a href="listing.html">Prom Dresses</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Dresses</a><span class="badge badge--squared">NEW</span></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #1</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #2</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Jackets</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #4</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #5</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #6</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Jeans</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #7</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #8</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #9</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Jumpsuits</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #10</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #11</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #12</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Lingerie</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #13</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #14</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Pants</a><span class="badge badge--squared badge--color-alt">-10%</span></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #15</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #16</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #17</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Shorts</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #18</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #19</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #20</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Skirts</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #21</a></li>
+                                                        <li class="level2"><a href="listing.html">Empty category #22</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Sweaters</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="level-menu level1">
+                                                    <ul>
+                                                        <li class="title"><a href="listing.html">Tops</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="megamenu__columns__bottom-block text-uppercase">
+                                                    <ul>
+                                                        <li><span class="icon icon-bag icon--lg"></span><a href="#">SPECIAL OFFER</a></li>
+                                                        <li><span class="icon icon-shop-label icon--lg"></span><a href="#">UP TO 50% OFF DISCOUNTS</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="megamenu__columns__side-image"><img src="images/img-megamenu.jpg" alt="Megamenu Image"> </li>
+                                            </ul>
                                         </div>
-                                        <div class="testimonial-author">
-                                            <span class="name">Esteban M.</span>
-                                            <p class="small">Yelp</p>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <hr class="colored">
+                                    </div>
+                                </li>
+                                <li><a href="gallery.html" class="wave"><span class="link-name">Gallery</span></a></li>
+                                <li>
+                                    <a href="about.html" class="dropdown-toggle"><span  class="link-name">Pages</span><span class="badge badge--menu">!</span><span class="caret caret--dots"></span></a>
+                                    <ul class="dropdown-menu animated fadeIn" role="menu">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="typography.html">Typography</a></li>
+                                        <li><a href="sitemap.html">Sitemap</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="create-account.html">Create Account</a></li>
+                                        <li><a href="logination.html">Logination</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-large">
+                                    <a href="#" class="dropdown-toggle"><span class="link-name">BUY THEME!</span><span class="caret caret--dots"></span></a>
+                                    <div class="dropdown-menu megamenu animated fadeIn">
+                                        <div class="container">
+                                            <div class="row megamenu__content">
+                                                <div class="col-sm-4">
+                                                    <div class="text-center">
+                                                        <a href="#"><img src="images/wd-present-01.jpg" class="img-responsive" alt="welldone"></a>
+                                                        <div class="text-uppercase"><a href="#">More than just responsive</a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="text-center">
+                                                        <a href="#"><img src="images/wd-present-02.jpg" class="img-responsive" alt="welldone"></a>
+                                                        <div class="text-uppercase"><a href="#">Page builder. Freedom - create your own layout</a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="text-center">
+                                                        <a href="#"><img src="images/wd-present-03.jpg" class="img-responsive" alt="welldone"></a>
+                                                        <div class="text-uppercase"><a href="#">Premium plugins/extensions s
+                                                            that are included for FREE </a>
+                                                        </div>
+                                                        (Slider Revolution, Colour swatch, Cloud Zoom, Blog)<br>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center"><a class="btn btn--wd">BUY THEME</a></div>
                                             </div>
                                         </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- End Header section -->
+            <div id="pageContent" class="page-content">
+                <section class="content" id="slider">
+                    <!-- Slider section --> 
+                    <!--
+                        #################################
+                        	- THEMEPUNCH BANNER -
+                        #################################
+                        --> 
+                    <!-- START REVOLUTION SLIDER 3.1 rev5 fullwidth mode -->
+                    <div class="tp-banner-container">
+                        <div class="tp-banner" >
+                            <ul>
+                                <!-- SLIDE  -->
+                                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                                    <!-- MAIN IMAGE --> 
+                                    <img src="images/slides/slide-1.jpg"  alt="slide1"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+                                    <!-- LAYERS --> 
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-caption--wd-1  lfb ltt" 
+                                        data-x="center" 
+                                        data-y="center"  
+                                        data-voffset="-100" 
+                                        data-speed="600" 
+                                        data-start="800" 
+                                        data-easing="Power4.easeOut" 
+                                        data-endeasing="Power4.easeIn" 
+                                        style="z-index: 1;">Fashion</div>
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption tp-caption--wd-2 lfb ltt" 
+                                        data-x="center"
+                                        data-y="center"  
+                                        data-voffset="0" 
+                                        data-speed="600" 
+                                        data-start="900" 
+                                        data-easing="Power4.easeOut" 
+                                        data-endeasing="Power4.easeIn" 
+                                        style="z-index: 2;">Special Occasion</div>
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption tp-caption--wd-3 lfb ltt" 
+                                        data-x="center"
+                                        data-y="center"  
+                                        data-voffset="70" 
+                                        data-speed="600" 
+                                        data-start="1000" 
+                                        data-easing="Power4.easeOut" 
+                                        data-endeasing="Power4.easeIn" 
+                                        data-captionhidden="on" 
+                                        style="z-index: 3;">the New & Exiting 2016 Collection </div>
+                                    <!-- LAYER NR. 4 -->
+                                    <div class="tp-caption lfb ltt" 
+                                        data-x="center" 
+                                        data-y="center"  
+                                        data-voffset="160" 
+                                        data-speed="600" 
+                                        data-start="1100" 
+                                        data-easing="Power4.easeOut" 
+                                        data-endeasing="Power4.easeIn" 
+                                        style="z-index: 11;"><a href="#" class="btn btn--wd btn--xl">SHOP NOW</a> </div>
+                                </li>
+                                <!-- SLIDE  -->
+                                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                                    <!-- MAIN IMAGE --> 
+                                    <img src="images/slides/slide-2.jpg"  alt="slide2"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+                                    <!-- LAYERS --> 
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption tp-caption--wd-4  lfb ltt" 
+                                        data-x="center" 
+                                        data-y="center"  
+                                        data-voffset="-150" 
+                                        data-speed="600" 
+                                        data-start="800" 
+                                        data-easing="Power4.easeOut" 
+                                        data-endeasing="Power4.easeIn" 
+                                        style="z-index: 10;">Welldone <span class="custom-color">:)</span></div>
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption tp-caption--wd-5 lfb ltt" 
+                                        data-x="center"
+                                        data-y="center"  
+                                        data-voffset="-70" 
+                                        data-speed="600" 
+                                        data-start="900" 
+                                        data-easing="Power4.easeOut" 
+                                        data-endeasing="Power4.easeIn" 
+                                        style="z-index: 10;">The Most Popular Store</div>
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption tp-caption--wd-6 lfb ltt" 
+                                        data-x="center"
+                                        data-y="center"  
+                                        data-voffset="0" 
+                                        data-speed="600" 
+                                        data-start="1000" 
+                                        data-easing="Power4.easeOut" 
+                                        data-endeasing="Power4.easeIn" 
+                                        data-captionhidden="on" 
+                                        style="z-index: 10;">Fully Customizable Responsive Theme</div>
+                                    <!-- LAYER NR. 4 -->
+                                    <div class="tp-caption lfb ltt" 
+                                        data-x="center" 
+                                        data-y="center"  
+                                        data-voffset="100" 
+                                        data-speed="600" 
+                                        data-start="1100" 
+                                        data-easing="Power4.easeOut" 
+                                        data-endeasing="Power4.easeIn" 
+                                        style="z-index: 11;"><a href="#" class="btn btn--wd btn--xl">SHOP NOW</a> </div>
+                                    <!-- IMAGE NR. 1 -->
+                                    <div class="tp-caption  lft ltt rs-parallaxlevel-1" 
+                                        data-x="650" 
+                                        data-y="0" 
+                                        data-speed="900"
+                                        data-start="1000"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 5;"			 ><img src="images/slides/s7.png" alt="Image1"></div>
+                                    <!-- IMAGE NR. 2 -->
+                                    <div class="tp-caption  lfr ltr rs-parallaxlevel-3" 
+                                        data-x="900" 
+                                        data-y="130" 
+                                        data-speed="1000"
+                                        data-start="1200"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 5;"			 ><img src="images/slides/s11.png" alt="Image2"></div>
+                                    <!-- IMAGE NR. 3 -->
+                                    <div class="tp-caption  lft ltt rs-parallaxlevel-2" 
+                                        data-x="-100" 
+                                        data-y="-10" 
+                                        data-speed="900"
+                                        data-start="1400"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 5;"			 ><img src="images/slides/s1.png" alt="Image3"></div>
+                                    <!-- IMAGE NR. 4 -->
+                                    <div class="tp-caption  lfb ltb rs-parallaxlevel-2" 
+                                        data-x="-100" 
+                                        data-y="300" 
+                                        data-speed="900"
+                                        data-start="1600"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 6;"			 ><img src="images/slides/s2.png" alt="Image4"></div>
+                                    <!-- IMAGE NR. 5 -->
+                                    <div class="tp-caption  lfb ltb rs-parallaxlevel-1" 
+                                        data-x="690" 
+                                        data-y="430" 
+                                        data-speed="900"
+                                        data-start="1000"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 5;"			 ><img src="images/slides/s12.png" alt="Image5"></div>
+                                    <!-- IMAGE NR. 6 -->
+                                    <div class="tp-caption  fadeIn fadeOut rs-parallaxlevel-2" 
+                                        data-x="100" 
+                                        data-y="150" 
+                                        data-speed="900"
+                                        data-start="1200"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 6;"			 ><img src="images/slides/s4.png" alt="Image6"></div>
+                                    <!-- IMAGE NR. 7 -->
+                                    <div class="tp-caption  lfb ltb rs-parallaxlevel-3" 
+                                        data-x="330" 
+                                        data-y="620" 
+                                        data-speed="900"
+                                        data-start="2000"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 6;"			 ><img src="images/slides/s9.png" alt="Image7"></div>
+                                    <!-- IMAGE NR. 8 -->
+                                    <div class="tp-caption  lft ltt rs-parallaxlevel-2" 
+                                        data-x="350" 
+                                        data-y="0" 
+                                        data-speed="900"
+                                        data-start="600"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 7;"			 ><img src="images/slides/s6.png" alt="Image8"></div>
+                                    <!-- IMAGE NR. 9 -->
+                                    <div class="tp-caption  lfr ltr rs-parallaxlevel-2" 
+                                        data-x="950" 
+                                        data-y="600" 
+                                        data-speed="900"
+                                        data-start="2400"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 7;"			 ><img src="images/slides/s13.png" alt="Image9"></div>
+                                    <!-- IMAGE NR. 10 -->
+                                    <div class="tp-caption  lfb ltb rs-parallaxlevel-2" 
+                                        data-x="120" 
+                                        data-y="600" 
+                                        data-speed="900"
+                                        data-start="1600"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 7;"			 ><img src="images/slides/s5.png" alt="Image10"></div>
+                                    <!-- IMAGE NR. 11 -->
+                                    <div class="tp-caption  lft ltt rs-parallaxlevel-2" 
+                                        data-x="900" 
+                                        data-y="-20" 
+                                        data-speed="900"
+                                        data-start="1000"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 7;"			 ><img src="images/slides/s10.png" alt="Image11"></div>
+                                    <!-- IMAGE NR. 12 -->
+                                    <div class="tp-caption  lft ltt rs-parallaxlevel-2" 
+                                        data-x="140" 
+                                        data-y="-20" 
+                                        data-speed="900"
+                                        data-start="800"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 7;"			 ><img src="images/slides/s3.png" alt="Image12"></div>
+                                    <!-- IMAGE NR. 13 -->
+                                    <div class="tp-caption  fadeIn fadeOut rs-parallaxlevel-2" 
+                                        data-x="480" 
+                                        data-y="500" 
+                                        data-speed="900"
+                                        data-start="1800"
+                                        data-easing="Power4.easeOut"
+                                        style="z-index: 7;"			 ><img src="images/slides/s8.png" alt="Image13"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scroll-to-content"> <a href="#" class="btn btn--round btn--round--lg"><span class="icon icon-arrow-down"></span></a></div>
+                    </div>
+                </section>
+                <!-- END REVOLUTION SLIDER --> 
+                <!-- End Slider section --> 
+                <!-- Content section -->
+                <section class="content fullwidth">
+                    <div class="container">
+                        <h2 class="text-center text-uppercase">product CATEGORIES</h2>
+                        <div class="parallax-gallery animated-arrows">
+                            <!-- carousel-navigation-wrapper -->
+							<div class="carousel-navigation-wrapper">
+                                <!-- сс-carousel -->
+								<div class="parallax-gal-carousel">
+                                    <!-- сс-carousel-content -->
+									<div class="parallax-gal-carousel-content">
+                                        <div class="parallax-gal-slide  hover-squared lg" data-row="1" style="left: 136.344%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-01.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Men Suits</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared sm" data-row="1" style="left: 96.3445%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-02.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Kids Clothes</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared sm" data-row="1" style="left: 66.3445%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-03.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Accessories</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared med" data-row="4" style="left: 165.861%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-04.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Shoes</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared med" data-row="2" style="left: 149.517%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-05.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Underwear</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared med" data-row="3" style="left: 237.689%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-16.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Dresses</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared lg" data-row="3" style="left: 302.689%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-17.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Bags</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared med" data-row="2" style="left: -35.4833%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-01.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Men Suits</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared lg" data-row="1" style="left: 16.3445%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-02.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Kids Clothes</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared lg" data-row="3" style="left: -27.311%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-03.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Accessories</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared med" data-row="2" style="left: 29.5167%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-04.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Shoes</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared sm" data-row="4" style="left: -9.13877%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-05.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Underwear</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared med" data-row="2" style="left: 99.5167%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-16.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Dresses</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared lg" data-row="3" style="left: 52.689%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-17.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Bags</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared med" data-row="4" style="left: 120.861%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-01.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Men Suits</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared sm" data-row="4" style="left: 250.861%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-02.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Kids Clothes</div>
+                                        </div>
+                                        <div class="parallax-gal-slide  hover-squared med" data-row="4" style="left: 335.861%">
+                                            <div class="parallax-gal-image">
+                                                <a href=""><img src="images/category-img-03.jpg" alt=""></a>
+                                                <div class="caption"></div>
+                                            </div>
+                                            <div class="parallax-gal-caption">Accessories</div>
+                                        </div>
+                                    </div>
+                                    <!-- /сс-carousel-content -->
+                                </div>
+                                <!-- /сс-carousel -->
+								<div class="nav-arrow left slick-prev"></div>
+								<div class="nav-arrow right slick-next"></div>
+                            </div>
+                            <!-- /carousel-navigation-wrapper -->
+                        </div>
+                    </div>
+                </section>
+                <section class="content content--parallax" data-image="images/parallax-bg.jpg">
+                    <div class="container">
+                        <div class="blog-widget">
+                            <h2 class="blog-widget__title text-uppercase">From The Blog</h2>
+                            <div class="blog-carousel mobile-special-arrows  animated-arrows show-3">
+                                <div class="blog-widget__item">
+                                    <div class="blog-widget__item__image-cell pull-left"><img src="images/blog-author-img-01.jpg" alt=""/></div>
+                                    <div class="blog-widget__item__offset-text pull-right">
+                                        <h3 class="blog-widget__item__offset-text__title text-uppercase">Integer vel nibh sit amet turpis </h3>
+                                        <div class="blog-widget__item__offset-text__date"><span>Friday, 29 May 2015</span></div>
+                                        <a href="#" class="btn btn--wd">READ MORE</a> 
+                                    </div>
+                                </div>
+                                <div class="blog-widget__item">
+                                    <div class="blog-widget__item__image-cell pull-left"><img src="images/blog-author-img-02.jpg" alt=""/></div>
+                                    <div class="blog-widget__item__offset-text pull-right">
+                                        <h3 class="blog-widget__item__offset-text__title text-uppercase">Nulla mauris ipsum convallis vestibulum</h3>
+                                        <div class="blog-widget__item__offset-text__date"><span>Friday, 29 May 2015</span></div>
+                                        <a href="#" class="btn btn--wd">READ MORE</a> 
+                                    </div>
+                                </div>
+                                <div class="blog-widget__item">
+                                    <div class="blog-widget__item__image-cell pull-left"><img src="images/blog-author-img-03.jpg" alt=""/></div>
+                                    <div class="blog-widget__item__offset-text pull-right">
+                                        <h3 class="blog-widget__item__offset-text__title text-uppercase">Integer ligula magna pulvinar ultricies</h3>
+                                        <div class="blog-widget__item__offset-text__date"><span>Friday, 29 May 2015</span></div>
+                                        <a href="#" class="btn btn--wd">READ MORE</a> 
+                                    </div>
+                                </div>
+                                <div class="blog-widget__item">
+                                    <div class="blog-widget__item__image-cell pull-left"><img src="images/blog-author-img-04.jpg" alt=""/></div>
+                                    <div class="blog-widget__item__offset-text pull-right">
+                                        <h3 class="blog-widget__item__offset-text__title text-uppercase">Integer ligula magna pulvinar ultricies</h3>
+                                        <div class="blog-widget__item__offset-text__date"><span>Friday, 29 May 2015</span></div>
+                                        <a href="#" class="btn btn--wd">READ MORE</a> 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-form bg-dark">
-        <div class="container text-center">
-            <h3>Subscribe to our newsletter!</h3>
-            <hr class="colored">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- MailChimp Signup Form -->
-                    <div id="mc_embed_signup">
-                        <!-- Replace the form action in the line below with your MailChimp embed action! For more informatin on how to do this please visit the Docs! -->
-                        <form role="form" action="" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-                            <div class="input-group input-group-lg">
-                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
-                                <span class="input-group-btn">
-                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe!</button>
-                                </span>
+                </section>
+                <section class="content">
+                    <div class="container">
+                        <!-- Modal -->
+                        <div class="modal quick-view zoom" id="quickView"  style="opacity: 1">
+                            <div class="modal-dialog">
+                                <div class="modal-content"> </div>
                             </div>
-                            <div id="mce-responses">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- /.modal -->
+                        <!-- Filters -->
+                        <section class="filters-by-category">
+                            <div class="container">
+                                <ul class="option-set" data-option-key="filter">
+                                    <li><a href="#filter" data-option-value="*" class="selected">All</a></li>
+                                    <li><a href="#filter" data-option-value=".category1" class="">Sale</a></li>
+                                    <li><a href="#filter" data-option-value=".category2" class="">New</a></li>
+                                    <li><a href="#filter" data-option-value=".category3" class="">Featured</a></li>
+                                    <li><a href="#filter" data-option-value=".category4" class="">Popular</a></li>
+                                </ul>
                             </div>
-                        </form>
+                        </section>
+                        <!-- //end Filters --> 
+                        <div class="products-grid products-listing products-col products-isotope four-in-row">
+                            <div class="product-preview-wrapper category1 category2">
+                                <div class="product-preview">
+                                    <div class="product-preview__image">
+                                        <a href="product.html"><img src="images/products/product-1.jpg" alt=""/></a>
+                                        <div class="product-preview__label product-preview__label--left product-preview__label--new"><span>new</span></div>
+                                        <div class="product-preview__label product-preview__label--right product-preview__label--sale"><span>sale<br>
+                                            -10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-preview__info text-center">
+                                        <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                                        <div class="product-preview__info__title">
+                                            <h2><a href="#">Fast Seconds Knit White</a></h2>
+                                        </div>
+                                        <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                                        <ul class="options-swatch options-swatch--color">
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/blue.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/yellow.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/green.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/dark-grey.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/grey.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/red.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/white.png" width="10" height="10" alt=""/></span></a></li>
+                                        </ul>
+                                        <div class="price-box "><span class="price-box__new">$65.00</span> <span class="price-box__old">$84.00</span></div>
+                                        <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-preview-wrapper category2">
+                                <div class="product-preview">
+                                    <div class="product-preview__image">
+                                        <a href="product.html"><img src="images/products/product-2.jpg"  alt=""/></a>
+                                        <div class="product-preview__label product-preview__label--left product-preview__label--new"><span>new</span></div>
+                                        <div class="countdown_box">
+                                            <div class="countdown_inner">
+                                                <div class="title">special price valid:</div>
+                                                <div id="countdown1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-preview__info text-center">
+                                        <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                                        <div class="product-preview__info__title">
+                                            <h2><a href="#">Fast Seconds Knit White</a></h2>
+                                        </div>
+                                        <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                                        <ul class="options-swatch options-swatch--color">
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/blue.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/yellow.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/green.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/dark-grey.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/grey.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/red.png" width="10" height="10" alt=""/></span></a></li>
+                                            <li><a href="#"><span class="swatch-label"><img src="images/colors/white.png" width="10" height="10" alt=""/></span></a></li>
+                                        </ul>
+                                        <div class="price-box"><span class="price-box__new">$65.00</span> <span class="price-box__old">$84.00</span></div>
+                                        <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-preview-wrapper category2 category3">
+                                <div class="product-preview">
+                                    <div class="product-preview__image">
+                                        <a href="product.html"><img src="images/products/product-3.jpg"  alt=""/></a>
+                                        <div class="product-preview__label product-preview__label--left product-preview__label--new"><span>new</span></div>
+                                    </div>
+                                    <div class="product-preview__info text-center">
+                                        <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                                        <div class="product-preview__info__title">
+                                            <h2><a href="#">Fast Seconds Knit White</a></h2>
+                                        </div>
+                                        <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                                        <div class="price-box">$65.00</div>
+                                        <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-preview-wrapper category2 category4">
+                                <div class="product-preview">
+                                    <div class="product-preview__image">
+                                        <a href="product.html"><img src="images/products/product-4.jpg"  alt=""/></a>
+                                        <div class="product-preview__label product-preview__label--left product-preview__label--new"><span>new</span></div>
+                                    </div>
+                                    <div class="product-preview__info text-center">
+                                        <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                                        <div class="product-preview__info__title">
+                                            <h2><a href="#">Fast Seconds Knit White</a></h2>
+                                        </div>
+                                        <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                                        <div class="price-box">$65.00</div>
+                                        <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-preview-wrapper category1 category3">
+                                <div class="product-preview">
+                                    <div class="product-preview__image">
+                                        <a href="product.html"><img src="images/products/product-5.jpg"  alt=""/></a>
+                                        <div class="product-preview__label product-preview__label--right product-preview__label--sale"><span>sale<br>
+                                            -10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-preview__info text-center">
+                                        <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                                        <div class="product-preview__info__title">
+                                            <h2><a href="#">Fast Seconds Knit White</a></h2>
+                                        </div>
+                                        <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                                        <div class="price-box"><span class="price-box__new">$65.00</span> <span class="price-box__old">$84.00</span></div>
+                                        <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-preview-wrapper category4">
+                                <div class="product-preview">
+                                    <div class="product-preview__image"><a href="product.html"><img src="images/products/product-6.jpg"  alt=""/></a></div>
+                                    <div class="product-preview__info text-center">
+                                        <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                                        <div class="product-preview__info__title">
+                                            <h2><a href="#">Fast Seconds Knit White</a></h2>
+                                        </div>
+                                        <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                                        <div class="price-box">$65.00</div>
+                                        <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-preview-wrapper category3">
+                                <div class="product-preview">
+                                    <div class="product-preview__image"><a href="product.html"><img src="images/products/product-7.jpg"  alt=""/></a></div>
+                                    <div class="product-preview__info text-center">
+                                        <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                                        <div class="product-preview__info__title">
+                                            <h2><a href="#">Fast Seconds Knit White</a></h2>
+                                        </div>
+                                        <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                                        <div class="price-box">$65.00</div>
+                                        <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-preview-wrapper category3 category4">
+                                <div class="product-preview">
+                                    <div class="product-preview__image"><a href="product.html"><img src="images/products/product-8.jpg"  alt=""/></a></div>
+                                    <div class="product-preview__info text-center">
+                                        <div class="product-preview__info__btns"><a href="#" class="btn btn--round"><span class="icon-ecommerce"></span></a> <a href="quick-view.html" class="btn btn--round btn--dark btn-quickview" data-toggle="modal" data-target="#quickView"><span class="icon icon-eye"></span></a></div>
+                                        <div class="product-preview__info__title">
+                                            <h2><a href="#">Fast Seconds Knit White</a></h2>
+                                        </div>
+                                        <div class="rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+                                        <div class="price-box">$65.00</div>
+                                        <div class="product-preview__info__link"><a href="#" class="compare-link"><span class="icon icon-bars"></span><span class="product-preview__info__link__text">Add to compare</span></a> <a href="#"><span class="icon icon-favorite"></span><span class="product-preview__info__link__text">Add to wishlist</span></a><a href="#" class="btn btn--wd buy-link"><span class="icon icon-ecommerce"></span><span class="product-preview__info__link__text">Add to cart</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- End MailChimp Signup Form -->
-                </div>
+                </section>
+                <section class="content content--fill top-null">
+                    <div class="container">
+                        <h2 class="text-center text-uppercase">products brands</h2>
+                        <div class="brands brands-carousel animated-arrows mobile-special-arrows">
+                            <div class="brands__item"><a href="#"><img src="images/brand-empty.png" data-lazy="images/brand-01.png" alt=""/></a></div>
+                            <div class="brands__item"><a href="#"><img src="images/brand-empty.png" data-lazy="images/brand-02.png" alt=""/></a></div>
+                            <div class="brands__item"><a href="#"><img src="images/brand-empty.png" data-lazy="images/brand-03.png" alt=""/></a></div>
+                            <div class="brands__item"><a href="#"><img src="images/brand-empty.png" data-lazy="images/brand-04.png" alt=""/></a></div>
+                            <div class="brands__item"><a href="#"><img src="images/brand-empty.png" data-lazy="images/brand-05.png" alt=""/></a></div>
+                            <div class="brands__item"><a href="#"><img src="images/brand-empty.png" data-lazy="images/brand-06.png" alt=""/></a></div>
+                            <div class="brands__item"><a href="#"><img src="images/brand-empty.png" data-lazy="images/brand-07.png" alt=""/></a></div>
+                            <div class="brands__item"><a href="#"><img src="images/brand-empty.png" data-lazy="images/brand-01.png" alt=""/></a></div>
+                            <div class="brands__item"><a href="#"><img src="images/brand-empty.png" data-lazy="images/brand-02.png" alt=""/></a></div>
+                            <div class="brands__item"><a href="#"><img src="images/brand-empty.png" data-lazy="images/brand-03.png" alt=""/></a></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Content section --> 
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container wow fadeIn">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Us</h2>
-                    <hr class="colored">
-                    <p>Please tell us about your next project and we will let you know what we can do to help you. Here at Refricenter, we believe that having strong customer service is the most important thing when it comes to maintain long-lasting relationships with our clientele. We encourage you to contact us and see how we can help you move your business forward. </p>
-                </div>
-            </div>
-            <div class="row content-row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
+            <footer class="footer">
+                <div class="footer__links hidden-xs">
+                    <div class="container">
                         <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-outline-dark">Send</button>
+                            <div class="col-sm-6">
+                                <div class="h-links-list">
+                                    <ul>
+                                        <li><a href="#">Site Map</a></li>
+                                        <li><a href="#">Search Terms</a></li>
+                                        <li><a href="#">Orders and Returns</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">RSS</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="h-links-list text-right">
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Customer Service</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Modals -->
-    <!-- Example Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal100" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/white.png')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
                     </div>
                 </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <center><img src="img/round.png"></center>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <h2>Locations</h2>
-                            <hr class="colored">
-                            <h4>Refricenter International Headquarters</h4>
-                            <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
-                            <p><a href="http://maps.apple.com/?address=7101,NW+43rd+St,Miami,Florida">7101 NW 43rd Street<br>Miami, FL 33166 </p>
-                            <p>Phone: <a href="tel:3054778880">(305) 477-8880</a></p>
-                            <p>Fax: (305) 599-9323</p>
-                            <p>Manager: <b>Jose Hernandez</b></p><br>
-
-                            <h4>Refricenter West</h4>
-                            <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
-                            <p>Saturday: 8:00 AM - 12:00 PM</p>
-                            <p><a href="http://maps.apple.com/?address=Refricenter+West">7360 NW 58 Street<br>Miami, FL 33166</a></p>
-                            <p>Phone: <a href="tel:3054778880">(305) 477-8880</a></p>
-                            <p>Fax: (305) 599-9323</p>
-                            <p>Manager: Luis Brito</p><br>
-
-                               <h4>Refricenter Hialeah</h4>
-                            <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
-                            <p>Saturday: 8:00 AM - 12:00 PM</p>
-                            <p><a href="http://maps.apple.com/?address=3599+NW+54th+St+Miami+FL">3599 NW 54th Street<br>Miami, FL 33142</a></p>
-                            <p>Phone: <a href="tel:3056331535">(305) 633-1535</a></p>
-                            <p>Fax: (305) 633-6438</p>
-                            <p>Manager: Rolando Marrero</p><br>
-
-                               <h4>Refricenter South</h4>
-                            <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
-                            <p>Saturday: 8:00 AM - 12:00 PM</p>
-                            <p><a href="http://maps.apple.com/?address=Refricenter+South">8884 SW 129th Street<br>Miami, FL 33176</a></p>
-                            <p>Phone: <a href="tel:3052519675">(305) 251-9675</a></p>
-                            <p>Fax: (305) 252-1629</p>
-                            <p>Manager: Tony Venzal</p><br>
-
-                               <h4>Refri-Air Appliance Parts</h4>
-                            <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
-                            <p>Saturday: 8:00 AM - 12:00 PM</p>
-                            <p><a href="http://maps.apple.com/?address=Refri-Air+Appliance+Parts">7145 SW 8th Street<br>Miami, FL 33144</a></p>
-                            <p>Phone: <a href="tel:3052667445">(305) 266-7445</a></p>
-                            <p>Fax: (305) 266-7491</p>
-                            <p>Manager: Ulises Gonzalez</p><br>
-
-                            <h4>Refricenter Tamiami</h4>
-                            <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
-                            <p>Saturday: 8:00 AM - 12:00 PM</p>
-                            <p><a href="http://maps.apple.com/?address=Refricenter+Tamiami">13500 SW 131st Street<br>Miami, FL 33186</a></p>
-                            <p>Phone: <a href="tel:7863600660">(786) 360-0660</a></p>
-                            <p>Fax: (305) 969-7380</p>
-                            <p>Manager: Julio Rodriguez</p><br>
-
-                            <h4>Refricenter Broward</h4>
-                            <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
-                            <p>Saturday: 8:00 AM - 12:00 PM</p>
-                            <p><a href="http://maps.apple.com/?address=Refricenter+Broward">2601-A Gateway Drive<br>Pompano Beach, FL 33069</a></p>
-                            <p>Phone: <a href="tel:9549681010">(954) 968-1010</a></p>
-                            <p>Fax: (954) 968-1019</p>
-                            <p>Manager: Sergio Rodriguez</p><br>
-
-                            <h4>Refricenter West Palm Beach</h4>
-                            <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
-                            <p>Saturday: 8:00 AM - 12:00 PM</p>
-                            <p><a href="http://maps.apple.com/?address=Refricenter+West Palm Beach">1685 Florida Mango Road North<br>West Palm Beach, FL 33409</a></p>
-                            <p>Phone: <a href="tel:5616898075">(561) 689-8075</a></p>
-                            <p>Fax: (561) 689-8265</p>
-                            <p>Manager: Lino Morgade</p><br>
-                        </div>
-                        <div class="col-lg-12">
-
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-
-                            <br><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                <div class="footer__column-links">
+                    <div class="back-to-top"> <a href="#top" class="btn btn--round btn--round--lg"><span class="icon-arrow-up"></span></a></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 hidden-xs hidden-sm">
+                                <!--  Logo  --> 
+                                <a class="logo logo--footer" href="index.html"> <img src="images/logo-transparent.png" alt=""/> </a> 
+                                <!-- End Logo --> 
+                            </div>
+                            <div class="col-sm-3 col-md-2 mobile-collapse">
+                                <h5 class="title text-uppercase mobile-collapse__title">Information </h5>
+                                <div class="v-links-list mobile-collapse__content">
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Shipping & Returns</a></li>
+                                        <li><a href="#">Privacy Notice</a></li>
+                                        <li><a href="#">Conditions of Use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-2 mobile-collapse">
+                                <h5 class="title text-uppercase mobile-collapse__title">Service</h5>
+                                <div class="v-links-list mobile-collapse__content">
+                                    <ul>
+                                        <li><a href="#">Online support</a></li>
+                                        <li><a href="#">Help & FAQs</a></li>
+                                        <li><a href="#">Call Center</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-2 mobile-collapse">
+                                <h5 class="title text-uppercase mobile-collapse__title">My account</h5>
+                                <div class="v-links-list mobile-collapse__content">
+                                    <ul>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">Order history</a></li>
+                                        <li><a href="#">Advanced search</a></li>
+                                        <li><a href="#">Reviews</a></li>  
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3 mobile-collapse mobile-collapse--last">
+                                <h5 class="title text-uppercase mobile-collapse__title">Company Info</h5>
+                                <div class="v-links-list mobile-collapse__content">
+                                    <ul>
+                                        <li class="icon icon-home">7563 St. Vincent Place, Glasgow</li>
+                                        <li class="icon icon-telephone">321321321, 321321321</li>
+                                        <li class="icon icon-mail"><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
+                                        <li class="icon icon-skype"><a href="#">shop.test</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div>    <div class="footer__subscribe">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 col-md-6">
+		  	  <div id="subscribeSuccess">
+				<p>Your email was added successfully!</p>
+			  </div>
+			  <div id="subscribeError">
+				<p>Something went wrong, try refreshing and submitting the form again.</p>
+			  </div>                
+            <form id="subscribe-form" class="subscribe-form" method="post" novalidate>
+              <label class="subscribe-form__label text-uppercase pull-left">Subscribe</label>
+              <input type="text" class="subscribe-form__input input--wd" placeholder="Your e-mail address" name="subscribemail">
+              <button type="submit" class="btn btn--wd text-uppercase wave"><span class="hidden-xs">Subscribe</span><span class="icon icon-mail-fill visible-xs"></span></button>
+            </form>
+          </div>
+          <div class="col-sm-5 col-md-6">
+            <div class="social-links social-links--colorize social-links--large">
+              <ul>
+                <li class="social-links__item"><a class="icon icon-facebook" href="http://www.facebook.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-twitter" href="http://www.twitter.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-google" href="http://www.google.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-pinterest" href="http://www.pinterest.com/"></a></li>
+                <li class="social-links__item"><a class="icon icon-mail" href="mailto:mail@google.com"></a></li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Example Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/house6.png')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <h2><b>Categories</h2>
-                            <hr class="colored">
-                              <img src="img/inverter.png" class="img-responsive img-centered" alt="">
-                            <h3>Inverter Mini-Splits</h3>
-                            <p>Wide Range of Product Offerings Including High Efficiency and Inverter Units</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-
-                        <img src="img/ducted.png" class="img-responsive img-centered" alt="">
-                            <h3><b>Ducted Systems</h3>
-                            <p>Single-phase Split Systems with a capacity from 1-5 Tons</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-
-                         <img src="img/lgductfree.png" class="img-responsive img-centered" alt="">
-                            <h3><b>LG Duct Free Systems</h3>
-                            <p>LG's Duct-Less Single Zone And Multi-Zone Offerings Reduce Contractor Costs And Save Consumers Money On Electricity</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-
-                         <img src="img/commercial.png" class="img-responsive img-centered" alt="">
-                            <h3><b>Commercial Air Conditioners</h3>
-                            <p>Packaged Units And Large Scale Equipment for Businesses, Hotels, and Industrial Needs</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-                            <img src="img/onoff.png" class="img-responsive img-centered" alt="">
-                            <h3><b>On/Off Mini Splits</h3>
-                            <p>On/Off Mini-Splits Offer Great Value For The Cooling Of An Isolated Space</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-
-                            <img src="img/refri.png" class="img-responsive img-centered" alt="">
-                            <h3><b>Refrigeration</h3>
-                            <p>Condensing Units and Evaporators for Reach-In Coolers, Walk-In Coolers, and Freezers</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-                         <img src="img/room.png" class="img-responsive img-centered" alt="">
-                            <h3><b>Room Air Conditioners, Portables and Dehumidifiers</h3>
-                            <p>Ductless, Pipeless Air Conditioning Units Housed All Together, Typically To Cool One Room.</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-                            <img src="img/fan.png" class="img-responsive img-centered" alt="">
-                            <h3><b>Fan Coils, Universal Mounts and Cassettes</h3>
-                            <p>Fan Coils for a Wide Range of Applications</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-                            <img src="img/compress.png" class="img-responsive img-centered" alt="">
-                            <h3><b>Compressors</h3>
-                            <p>Ample Variety In Order to Meet All Residential, Commercial, and Industrial Needs</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-                            <img src="img/controls.png" class="img-responsive img-centered" alt="">
-                            <h3><b>Controls</h3>
-                            <p>Control, Monitoring and Automation Products for Cooling Systems</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-                            <img src="img/insulation.png" class="img-responsive img-centered" alt="">
-                            <h3><b>Insulation</h3>
-                            <p>Solutions for Making Ducts in Air Conditioning, Heating, and Ventilation.</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-                            <img src="img/other.png" class="img-responsive img-centered" alt="">
-                            <h3><b>Other Products</h3>
-                            <p>Refrigerants, Copper Tubing, Accessories, Materials and Tools</p></b>
-
-                        <div class="col-lg-12">
-                             <a href="#portfolioModal" data-toggle="modal" class="btn btn-outline-light">View Products<i class="fa fa-long-arrow-right fa-fw"></i></a><br><br>
-                        </div>
-
-                           <br><br> <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Example Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/white.png')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <h3>Ultra Premier Inverter System</h3>
-                            <hr class="colored">
-                            <p><a href="http://www.refripartesrd.com/uploads/MWPHT.pdf">Specifications MWPHT/MRPHT</a></p>
-                        </div>
-                        <div class="col-lg-12">
-                            <img src="img/ultra.png"  width="200px" class="img-responsive img-centered" alt="">
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <p><b>Description</b></p>
-                            <ul class="list-inline item-details">
-                                 <li>- R-410A Refrigerant
-                                </li>
-                                <li>- Market leading efficiency up to 27 SEER
-                                </li>
-                                <li>- Sleek, metallic design
-                                </li>
-                                <li>- AHRI, Energy Star, and ETL Certified
-                                </li>
-                                <li>- Refrigerant leakage detection
-                                </li>
-                                <li>- Self-cleaning system leaves indoor unit dry and prevents accumulation of mildew
-                                </li>
+<div class="footer__settings visible-xs">
+                    <div class="container text-center">
+                        <div class="dropdown pull-left">
+                            <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown" aria-expanded="false"><span class="header__dropdowns__button__symbol">$</span></a>
+                            <ul class="dropdown-menu animated fadeIn" role="menu">
+                                <li class="currency__item currency__item--active"><a href="#">$ USA Dollar</a></li>
+                                <li class="currency__item"><a href="#">€ Euro</a></li>
+                                <li class="currency__item"><a href="#">£ British Pound</a></li>
                             </ul>
-                                <p><b>Avaliable Capacities:</b></p>
-                                  <ul class="list-inline item-details">
-                                 <li>- 9,000 BTU/h
-                                </li>
-                                <li>- 12,000 BTU/h
-                                </li>
-                                <li>- 18,000 BTU/h
-                                </li>
-                                <li>- 24,000 BTU/h
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
+                        <div class="dropdown pull-left">
+                            <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown" aria-expanded="false"><span class="flag"><img src="images/flags/gb.png" alt=""></span></a>
+                            <ul class="dropdown-menu animated fadeIn languages languages--flag" role="menu">
+                                <li class="languages__item languages__item--active"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/gb.png" alt=""></span><span class="languages__item__label">En</span></a></li>
+                                <li class="languages__item"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/de.png" alt=""></span><span class="languages__item__label">De</span></a></li>
+                                <li class="languages__item"><a href="#"><span class="languages__item__flag flag"><img src="images/flags/fr.png" alt=""></span><span class="languages__item__label">Fr</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown pull-left">
+                            <a href="#" class="btn dropdown-toggle btn--links--dropdown header__dropdowns__button" data-toggle="dropdown" aria-expanded="false">Account</a>
+                            <ul class="dropdown-menu animated fadeIn" role="menu">
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Compare</a></li>
+                                <li><a href="#">Checkout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">      <div class="container">
+        <div class="pull-left text-uppercase">© 2016 <a href="#">Welldone :)</a>. All Rights Reserved. </div>
+        <div class="pull-left text-center">
+          <label>Select Store: </label>
+          <div class="select-wrapper">
+              <select class="select--wd select--wd--xs">
+                <option>Store Name 1</option>
+                <option>Store Name 2</option>
+                <option>Store Name 3</option>
+              </select>
+          </div>
+        </div>
+        <div class="pull-right text-uppercase text-right">with love <span class="icon-favorite color-heart"></span> from <a href="http://themeforest.net/user/etheme">etheme</a></div>
+      </div>
+</div>
+            </footer>
+        </div>
+        <div class="compare-box" id="compareBox">
+            <div class="container">
+                <div class="compare-box__header">
+                    <h3 class="compare-box__header__title">Compare</h3>
+                    <div class="compare-box__header__toggle"><span class="compare-box__header__toggle__hide hide-compare">Hide<span class="icon icon-arrow-down"></span></span><span class="compare-box__header__toggle__show show-compare">Show<span class="icon icon-arrow-up"></span></span><span class="compare-box__header__toggle__close close-compare"><span class="icon icon-clear"></span></span></div>
+                </div>
+                <div class="compare-box__items">
+                    <ul class="compare-box__items__list compare-carousel nav-top">
+                        <li class="compare-box__items__list__item">
+                            <div class="compare-box__items__list__item__delete"><a href="#" class="icon icon-clear"></a></div>
+                            <a href="#"><img src="images/products/product-2.jpg" alt=""></a>
+                        </li>
+                        <li class="compare-box__items__list__item empty">
+                            <div class="compare-box__items__list__item__num">1</div>
+                            <img src="images/products/product-empty.png" alt=""/>
+                        </li>
+                        <li class="compare-box__items__list__item empty">
+                            <div class="compare-box__items__list__item__num">2</div>
+                            <img src="images/products/product-empty.png" alt=""/>
+                        </li>
+                        <li class="compare-box__items__list__item empty">
+                            <div class="compare-box__items__list__item__num">3</div>
+                            <img src="images/products/product-empty.png" alt=""/>
+                        </li>
+                        <li class="compare-box__items__list__item empty">
+                            <div class="compare-box__items__list__item__num">4</div>
+                            <img src="images/products/product-empty.png" alt=""/>
+                        </li>
+                        <li class="compare-box__items__list__item empty">
+                            <div class="compare-box__items__list__item__num">5</div>
+                            <img src="images/products/product-empty.png" alt=""/>
+                        </li>
+                        <li class="compare-box__items__list__item empty">
+                            <div class="compare-box__items__list__item__num">6</div>
+                            <img src="images/products/product-empty.png" alt=""/>
+                        </li>
+                    </ul>
+                    <div class="compare-box__actions">
+                        <div class="compare-box__actions__btns"> <a href="#" class="btn btn--wd btn--lg text-uppercase">Compare</a> <a href="#" class="btn btn--wd btn--lg btn--light text-uppercase" id="removeAllCompare">Clear All</a> </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Example Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/white.png')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <!-- <img src="img/adflkj.png" class="img-responsive img-centered" alt=""> -->
-                            <h2>______</h2>
-                            <hr class="colored">
-                            <p>______</p>
-                        </div>
-                        <div class="col-lg-12">
-                            <!-- <img src="img/portfolio.png" class="img-responsive img-centered" alt=""> -->
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>
-                                </li>
-                                <li>
-                                </li>
-                                <li>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
+        <div class="modal fade bs-example-modal-sm" role="dialog" id="modalAddToCart">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <button type="button" class="close icon-clear" data-dismiss="modal"></button>
+                    <div class="text-center">
+                        <div class="divider divider--xs"></div>
+                        <p>Product added to cart successfully! </p>
+                        <div class="divider divider--xs"></div>
+                        <a href="#" class="btn btn--wd">Go to Cart</a>
+                        <div class="divider divider--xs"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Example Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/white.png')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <!-- <img src="img/adflkj.png" class="img-responsive img-centered" alt=""> -->
-                            <h2>______</h2>
-                            <hr class="colored">
-                            <p>______</p>
+        <div class="modal fade bs-example-modal-sm" role="dialog" id="modalAddToWishlist">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <button type="button" class="close icon-clear" data-dismiss="modal"></button>
+                    <div class="text-center">
+                        <div class="divider divider--xs"></div>
+                        <div class="loading">
+                            <div class="divider divider--sm"></div>
+                            <div class="loader">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
                         </div>
-                        <div class="col-lg-12">
-                            <!-- <img src="img/portfolio/.png" class="img-responsive img-centered" alt=""> -->
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>
-                                </li>
-                                <li>
-                                </li>
-                                <li>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
+                        <p class="success">Product added to wishlist successfully! </p>
+                        <div class="divider divider--xs"> </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- Vendor --> 
+        <!-- jQuery 1.10.1--> 
+        <script src="vendor/jquery/jquery.js"></script> 
+        <!-- Bootstrap 3--> 
+        <script src="vendor/bootstrap/bootstrap.min.js"></script> 
+        <!-- Specific Page Vendor --> 
+        <script src="vendor/waves/waves.min.js"></script> 
+        <script src="vendor/slick/slick.min.js"></script> 
+        <script src="vendor/bootstrap-select/bootstrap-select.min.js"></script> 
+        <script src="vendor/parallax/jquery.parallax-1.1.3.js"></script> 
+        <script src="vendor/waypoints/jquery.waypoints.min.js"></script> 
+        <script src="vendor/waypoints/sticky.min.js"></script> 
+        <script src="vendor/doubletaptogo/doubletaptogo.js"></script> 
+        <script src="vendor/isotope/isotope.pkgd.min.js"></script> 
+        <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script> 
+        <script src="vendor/countdown/jquery.plugin.min.js"></script> 
+        <script src="vendor/countdown/jquery.countdown.min.js"></script> 
+<!-- jQuery form validation --> 
+<script src="vendor/form/jquery.form.js"></script> 
+<script src="vendor/form/jquery.validate.min.js"></script> 
+<!-- Custom --> 
+<script src="js/custom.js"></script> 
+<!-- Parallax carousel / JS -->
+        <script src="vendor/parallax-carousel/pcarousel-plugin.min.js"></script>
+        <script src="vendor/parallax-carousel/pcarousel-init.min.js"></script>
+        <!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+        <script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script> 
+        <script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+            
+            	
+            				
+            	jQuery('.tp-banner').show().revolution(
+            	{
+            		dottedOverlay:"none",
+            		delay:16000,
+            		startwidth:1170,
+            		startheight:700,
+            		hideThumbs:200,
+            		hideTimerBar:"on",
+            		
+            		thumbWidth:100,
+            		thumbHeight:50,
+            		thumbAmount:5,
+            		
+            		navigationType:"none",
+            		navigationArrows:"",
+            		navigationStyle:"",
+            		
+            		touchenabled:"on",
+            		onHoverStop:"on",
+            		
+            		swipe_velocity: 0.7,
+            		swipe_min_touches: 1,
+            		swipe_max_touches: 1,
+            		drag_block_vertical: false,
+            								
+            		parallax:"mouse",
+            		parallaxBgFreeze:"on",
+            		parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+            								
+            		keyboardNavigation:"off",
+            		
+            		navigationHAlign:"center",
+            		navigationVAlign:"bottom",
+            		navigationHOffset:0,
+            		navigationVOffset:20,
+            
+            		soloArrowLeftHalign:"left",
+            		soloArrowLeftValign:"center",
+            		soloArrowLeftHOffset:20,
+            		soloArrowLeftVOffset:0,
+            
+            		soloArrowRightHalign:"right",
+            		soloArrowRightValign:"center",
+            		soloArrowRightHOffset:20,
+            		soloArrowRightVOffset:0,
+            				
+            		shadow:0,
+            		fullWidth:"off",
+            		fullScreen:"on",
+            
+            		spinner:"",
+            		
+            		stopLoop:"off",
+            		stopAfterLoops:-1,
+            		stopAtSlide:-1,
+            
+            		shuffle:"off",
+            		
+            		autoHeight:"off",						
+            		forceFullWidth:"off",						
+           								
+            		hideThumbsOnMobile:"off",
+            		hideNavDelayOnMobile:1500,						
+            		hideBulletsOnMobile:"off",
+            		hideArrowsOnMobile:"off",
+            		hideThumbsUnderResolution:0,
+            		
+            		hideSliderAtLimit:0,
+            		hideCaptionAtLimit:0,
+            		hideAllCaptionAtLilmit:0,
+            		startWithSlide:0,
+            		fullScreenOffsetContainer: ".header"	
+            	});
+            	
+            	
+            	
+            					
+            });	//ready
+            
+        </script>
+    </body>
+</html>

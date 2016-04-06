@@ -1,0 +1,212 @@
+@compare-box-height:        220px;
+@compare-box-height-min:    48px;
+@compare-product-width:             115px;
+@compare-product-margin:            20px;
+
+@media (max-width: @screen-sm-max) {
+	.compare-box {
+		display: none;
+	}
+}
+
+body.compare-minimize {
+	padding-bottom: @compare-box-height-min;
+}
+.compare-box {
+	position: fixed;
+	z-index: 10001;
+	left: 0;
+	right: 0;
+	height: @compare-box-height;
+	bottom: -@compare-box-height;
+	padding: 20px 0;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: @border-color-light;
+	background: fade(@compare-box-bg, 95%);
+	overflow: hidden;
+	.transition (all, 300ms);
+	.container {
+		position: relative;
+	}
+	&.open {
+		bottom: 0;
+		&__header {
+			&__toggle {
+				&__hide {
+					display: block;
+				}
+				&__show {
+					display: none;
+				}
+			}
+		}
+	}
+	&.minimize {
+		bottom: 0;
+		height: @compare-box-height-min;
+		padding: 10px 0;
+	}
+	&__header {
+		position: relative;
+		&__title {
+			padding-bottom: 20px;
+			.minimize & {
+				padding-bottom: 10px;
+			}	
+		}
+
+		&__toggle {
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 1.231em;
+			line-height: 1em;
+			text-transform: uppercase;
+			cursor: pointer;
+			.minimize & {
+				top: 5px;
+			}
+			.icon {
+//				color: @color-lighter;
+				vertical-align: top;
+				font-weight: bold;
+				font-size: 12px;
+				padding: 0 5px 0 10px;
+				cursor: pointer;
+//				&:hover {
+//					color: @custom-color;
+//				}
+			}
+			&__hide {
+				display: inline-block;
+				.minimize & {
+					display: none;
+				}
+			}
+			&__show {
+				display: none;
+				.minimize & {
+					display: inline-block;
+				}
+			}
+			&__close {
+				font-size: 14px;
+				padding-left: 15px;
+			}
+		}
+	}
+	&__actions {
+		position:absolute;
+		right: 0;
+		top: 50px;
+		width: 150px;
+		&__btns {
+			width: 135px;
+		}
+		.btn {
+			width: 100%;
+			margin: 7px 0;
+		}
+	}
+	&__items {
+		margin-right: 200px;
+			@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+				@count:  5;
+				width:  (@count - 1)*@compare-product-margin + @compare-product-width*@count;
+			}
+		.owl-welldone.nav-top .owl-nav {
+			margin-top: -40px;
+			.minimize & {
+				display: none;
+			}
+		}
+		&__list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			&__item {
+				display: block;
+				float: left;
+				position: relative;
+				width: 115px;
+				margin-left: @compare-product-margin;
+				margin-bottom: 100px;
+				vertical-align: top;
+				border-width: 4px;
+				border-style: solid;
+//				border-color: @border-color-light;
+				.transition (border-color, 200ms);
+				&:first-child {
+					margin-left: 0;
+				}
+				&.empty {
+					border-width: 4px;
+					border-style: dashed;
+//					border-color: @border-color-light;
+				} 
+				img {
+					width: 100%;
+				}
+				&__delete {
+					position: absolute;
+					top: 5px;
+					right: 5px;
+					font-size: 10px;
+//					color: @color-light;
+//					a:hover {
+//						color: @custom-color;				
+//					}
+				}
+				&__num {
+					position: absolute;
+					top: 50%;
+					right: 0;
+					left: 0;
+					margin-top: -19px;
+					text-align: center;
+					font-size: 38px;
+					line-height: 1em;
+//					color: @color-lighter;
+					font-weight: bold;
+				}
+//				&:hover {
+//					border-color: @custom-color;				
+//				}
+			}
+		}
+	}
+}
+.compare-carousel {
+	&.slick-slider {
+		margin: 0 0 - @compare-product-margin/2 !important;
+	}
+	.slick-slide {
+		width: @compare-product-width !important;
+		margin: 0 @compare-product-margin/2 !important;
+	}
+	.slick-prev {
+	  right: @compare-product-margin/2 + 35 !important;
+	  .minimize & {
+		opacity: 0 !important;
+	  }	 
+	}
+	.slick-next {
+	  right: @compare-product-margin/2 !important;
+	  .minimize & {
+		opacity: 0 !important;
+	  }	  
+	}
+	@media (min-width: 0) and (max-width: 479px) {
+		.slick-next {
+			top: 50%;
+			margin-top: -11px;
+			right: 22px !important;;
+		}
+		.slick-prev {
+			top: 50%;
+			margin-top: -11px;
+			left: 22px !important;;
+		}	
+	}
+}

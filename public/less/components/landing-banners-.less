@@ -1,0 +1,164 @@
+#landingBanners {
+	overflow-y: hidden;
+	margin-top: 50px;
+}
+article:last-of-type {
+	margin-bottom: 0;
+}
+article {
+	position: relative;
+	height: auto;
+	@media (min-width: 480px) {
+		margin-bottom: 100px;
+	}
+}
+article .article-content:before {
+	@media (min-width: 480px) {
+		padding-top: 55%;
+		content: '';
+		display: block;
+	}
+}
+article .article-content .banner {
+	@media (min-width: 480px) {
+		overflow: hidden;
+		position: absolute;
+		img {
+			width:100%;
+		}
+		@media (max-width: 479px) {
+			position: relative;
+		}
+	}
+}
+article .article-content .banner:hover {
+	z-index: 100;
+}
+article .article-content .banner::before {
+	content: '';
+	background: inherit;
+	position: absolute;
+	top: -20px;
+	right: -1px;
+	bottom: -20px;
+	left: -1px;
+}
+
+article  {
+	@media (min-width: 480px) {
+	.banner {
+		&--1 {
+			top: -20%;
+			left: 0%;
+			right: 48%;
+			z-index:1;
+			.touch & {
+				top: 0;
+			}
+		}
+		&--2 {
+			top: 30%;
+			left: 50%;
+			right: 0%;
+			z-index:2;
+			.touch & {
+				top: 5%;
+			}		
+		}
+		&--3 {
+			bottom: -15%;
+			margin: 0 auto;
+			left: 30%;
+			right: 30%;
+			z-index:3;
+			@media (max-width: @screen-md-max) {
+				left: 20%;
+				right: 20%;				
+			}
+			@media (max-width: @screen-xs-max) {
+				left: 10%;
+				right: 10%;				
+			}
+		}
+		&--4 {
+			top: 5%;
+			left: 0%;
+			right: 55%;
+			z-index:1;
+		}
+		&--5 {
+			top:10%;
+			left: 40%;
+			right: 0%;
+			z-index:2;
+		}
+		&--6 {
+			bottom: -25%;
+			margin: 0 auto;
+			left: 35%;
+			right: 35%;
+			z-index:3;
+			@media (max-width: @screen-sm-max) {
+				left: 25%;
+				right: 25%;				
+			}
+			@media (max-width: @screen-xs-max) {
+				left: 20%;
+				right: 20%;				
+			}
+		}
+		&--7 {
+			top: 10%;
+			left: 0%;
+			right: 40%;
+			z-index:1;
+		}
+		&--8 {
+			top:5%;
+			left: 55%;
+			right: 0%;
+			z-index:2;
+		}
+	}
+	}
+}
+.article-nav {
+	position: fixed;
+	right: 25px;
+	.vertical-align;
+	@media (max-width: 479px) {
+		display: none;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li  { 
+			a {
+//				background-color: transparent;
+				display: block;
+				font-size: 0;
+				height: 40px;
+				line-height: 1;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+				cursor: pointer;
+				text-decoration: none;
+				&:before {
+//				  color: @color-light;
+				  content: '\2022';
+				  display: block;
+				  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				  font-size: 25px; }
+			}
+		}
+//		li.active {
+//			a {
+//				&:before {
+//				  color: @body-font-color;
+//				 }
+//			}
+//		}
+	}
+}

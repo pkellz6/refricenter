@@ -1,0 +1,138 @@
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+}
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:	 @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	 @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:		     @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+.transition (@props: all; 
+             @duration:1s; 
+             @delay: 0s; 
+             @timing: ease; 
+             @compact: true;
+             @raw-input: false) {
+  .output() when (@raw-input = false) and not (@compact = true) {
+  -webkit-transition-property:@props; 
+     -moz-transition-property:@props;
+      -ms-transition-property:@props;
+       -o-transition-property:@props; 
+          transition-property:@props;
+  -webkit-transition-duration:@duration; 
+     -moz-transition-duration:@duration;
+      -ms-transition-duration:@duration;
+       -o-transition-duration:@duration; 
+          transition-duration:@duration;
+  -webkit-transition-delay:   @delay; 
+     -moz-transition-delay:   @delay;
+      -ms-transition-delay:   @delay;
+       -o-transition-delay:   @delay; 
+          transition-delay:   @delay;
+  -webkit-transition-timing-function:@timing; 
+     -moz-transition-timing-function:@timing;
+      -ms-transition-timing-function:@timing;
+       -o-transition-timing-function:@timing; 
+          transition-timing-function:@timing;
+  }
+  .output() when (@raw-input = false) and (@compact = true) {
+    @propsLength: length(@props);
+    @durationLength: length(@duration);
+    @delayLength: length(@delay);
+    @timingLength: length(@timing);
+    .buildString(@i, @s: ~'') when (@i <= @propsLength) {
+      @prop: extract(@props, @i);
+      .setDuration() when (@i <= @durationLength) {
+        @dur: extract(@duration, @i);
+      }
+      .setDuration() when (@i > @durationLength) {
+        @dur: extract(@duration, @durationLength);
+      }
+      .setDuration();
+      .setDelay() when (@i <= @delayLength) {
+        @del: extract(@delay, @i);
+      }
+      .setDelay() when (@i > @delayLength) {
+        @del: extract(@delay, @delayLength);
+      }
+      .setDelay();
+      .setTiming() when (@i <= @timingLength) {
+        @time: extract(@timing, @i);
+      }
+      .setTiming() when (@i > @timingLength) {
+        @time: extract(@timing, @timingLength);
+      }
+      .setTiming();
+      .setDivider() when (@i > 1) {
+        @divider: ~'@{s},';
+      }
+      .setDivider() when (@i = 1) {
+        @divider: ~'';
+      }
+      .setDivider();
+      @string: @divider @prop @dur @del @time;
+      .buildString((@i + 1), @string);  
+    }
+    .buildString(1);
+    .buildString(@i, @s: ~'') when (@i > @propsLength) {
+      .compact(@s);
+    }
+  }
+  .output() when not (@raw-input = false) {
+    .compact(@raw-input);
+  }
+  .compact(@string) {
+    -webkit-transition:@string; 
+       -moz-transition:@string;
+        -ms-transition:@string;
+         -o-transition:@string; 
+            transition:@string;    
+  }
+  .output();
+}
+.transform(@transform) {
+    -webkit-transform: @transform;
+    -moz-transform: @transform;
+    -ms-transform: @transform; /* note that you have @transform here */
+    -o-transform: @transform;
+    transform: @transform; 
+}
+.mdShadow(@level: 1){
+    & when (@level = 1) {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    & when (@level = 2) {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    & when (@level = 3) {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    & when (@level = 4) {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    & when (@level = 5) {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+}
+.vertical-align {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.horizontal-align {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

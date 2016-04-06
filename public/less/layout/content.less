@@ -1,0 +1,222 @@
+.outer {
+	width: 100%;
+	display: inline-block;
+}
+.page-content {
+	position: relative;
+	overflow: hidden;
+	body:not(.boxed) &--fill {
+//		background: @content-fill-bg;		
+	}
+}
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.parallax, .image-bg {
+		background: url(../images/parallax-bg.jpg) 50% 50% no-repeat fixed;
+		.touch & {
+			background-attachment: scroll;
+			background-repeat: repeat;
+			background-size: cover;
+			background-position: center 0 !important;
+		}
+}
+.title-outer {
+	padding-top: @content-box-padding;
+	&.top-null {
+		margin-top: 0 !important;
+		padding-top: 0;
+	}	
+	&.bottom-null {
+		margin-bottom: 0 !important; 
+		padding-bottom: 0;
+	}	
+}
+
+#pageContent > #slider.content {
+	padding-top: 0;
+	padding-bottom: 0 !important;
+}
+
+.content {
+	padding-top: @content-box-padding;
+	@media (max-width: @screen-xs-max) {
+		padding-top: @content-box-padding * 0.5;
+	}
+//	#pageContent > &:first-child {
+//		padding-top: 0;
+//		padding-bottom: 0 !important;
+//	}
+	#pageContent > &:last-child, #pageContent > &:last-of-type  {
+		padding-bottom: @content-box-padding*0.65;
+	}
+	.aside-column {
+		padding-top: @content-box-padding*0.65;
+		@media (max-width: @screen-xs-max) {
+			float: none !important;
+		}
+	}
+	.aside-column & {
+		padding-top: @content-box-padding*0.65;
+	}
+	.aside-column &:first-child {
+		padding-top: 0;
+	}
+	.aside-column &:last-child {
+		padding-bottom: @content-box-padding*0.65;
+	}
+	.landing-content &{
+		padding-top: 0;
+	}
+	&.top-padding {
+		padding-top: @content-box-padding*0.65 !important;
+	}
+	&.top-null {
+		margin-top: 0 !important;
+		padding-top: 0;
+	}	
+	&.top-pad-null {
+		padding-top: 0 !important;
+	}		
+	&.bottom-null {
+		margin-bottom: 0 !important;
+		padding-bottom: 0 !important;
+	}	
+	&--fill {
+//		background-color: @content-fill-bg !important;
+		padding-top: @content-fill-padding !important; 
+		padding-bottom: @content-fill-padding !important; 
+		margin-top: @content-box-padding;
+		&.top-pad-null {
+			padding-top: 0 !important;
+		}
+//		&--light {
+//			background-color: lighten(@content-fill-bg, 1.6%) !important;
+//		}
+	}
+	&--parallax {
+		background: url(../images/parallax-bg.jpg) 50% 50% no-repeat fixed;
+		padding: @parallax-box-padding;
+		&.top-null {
+			padding: @parallax-box-padding;
+		}	
+		margin-top: @content-box-padding;
+		.touch & {
+			background-attachment: scroll;
+			background-repeat: repeat;
+			background-size: cover;
+			background-position: center 0 !important;
+		}
+		&--short {
+			padding: 60px 0 50px !important;
+		}
+		&--high {
+			padding: @content-fill-padding 0 !important;
+			@media (min-width: @screen-sm-min) {
+				padding: @content-fill-padding*1.5 0 !important;
+			}
+			@media (min-width: @screen-md-min) {
+				padding: @content-fill-padding*2 0 !important;
+			}
+			@media (min-width: @screen-lg-min) {
+				padding: @content-fill-padding*2.3 0 !important;
+			}
+		}
+	}
+	&.boxed, body.boxed  *:not(.aside-column) >  & {
+	   .container;
+	   padding-left: 0;
+	   padding-right: 0;
+	   .hide-outer-animation {
+			overflow: hidden;
+			padding-bottom: 25px;
+			margin-bottom: -25px;
+	   }
+	}
+	&.fullwidth, body.fullwidth *:not(.aside-column) > & {
+	   .container-fluid;
+	   padding-left: 0;
+	   padding-right: 0;
+	   .container {
+			width: auto;
+	   	   .container-fluid;
+		   padding-left: 0;
+		   padding-right: 0;	   
+		}
+	}
+	body.fullwidth & {
+	   .container {
+		   padding-left: 15px !important;
+		   padding-right: 15px !important;
+	   }
+	}
+}
+.slider {
+	padding-bottom: @content-box-padding;
+}
+.aside-column {
+	@media (max-width: @screen-md-max) {
+		margin-bottom: 35px;
+	}
+	.container {
+		width: 100% !important;
+	}
+}
+
+.social-item {
+	@media (min-width:992px) {
+		max-width: 340px;
+	}
+	text-align: center;
+	margin-bottom: 75px;
+	.img-responsive {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 1770px) {
+	body.wide {
+		width: 100%;
+		.container, .header__dropdowns-container {
+			width: 1770px;
+		}
+	}
+}
+
+// fix safari problem
+#pluginIdTFPU_2 {
+	display: none
+}
+
+
+// boxed background
+
+body.boxed {
+	background: url(../images/bg-boxed.jpg) no-repeat center top fixed;
+	.touch & {
+		background-attachment:inherit;
+		background-repeat: repeat;
+	}
+//	.content {
+//		background-color: @color-white;
+//	}
+	.content--fill {
+		margin-top: 0;
+	}
+	.content--parallax {
+		position: relative;
+		&:before {
+			content: ' ';
+			position: absolute;
+			z-index: -1;
+			width: 100%;
+			height: @content-box-padding;
+			top: 0 - @content-box-padding;
+			display: block;
+//			background: @color-white;
+		}
+	}	
+}

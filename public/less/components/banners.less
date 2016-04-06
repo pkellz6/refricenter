@@ -1,0 +1,183 @@
+.banner{
+	position: relative;
+	cursor: pointer;
+	line-height: 1em;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	.mdShadow(1);
+	.transition (box-shadow, 300ms);
+	&:hover {
+		.mdShadow(3);
+	}
+	&--image {
+		display: inline-block;
+		@media (max-width: @screen-sm-max) {
+			margin-bottom: 34px;
+		}
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+		&__text {
+			position: absolute;
+			padding: 2%;
+			.vertical-align;
+//			&--light {
+//				color: @banner-text-color-light;
+//			}
+//			&--white {
+//				color: @color-white;
+//			}
+//			&--dark {
+//				color: @banner-text-color-dark;
+//			}
+			&--bottom {
+				top: 70%;
+			}
+			&--left {
+				width: 45%;
+				left: 6%;
+			}
+			&--right {
+				width: 45%;
+				right: 6%;
+			}
+			@media (max-width:  @screen-md-max) and (min-width:  @screen-md-min) {
+				&--left {
+					width: 55%;
+					left: 6%;
+				}
+				&--right {
+					width: 55%;
+					right: 6%;
+				}
+			}			
+			.btn {
+				margin-top: 1.2em;
+				@media (max-width: @screen-xs-max) {
+					margin-top: 0.8em;
+				}
+			}
+			h2 {
+				font-size: 5.538em;
+				line-height: 1em;
+				padding-bottom: 0.2em;
+				font-family: @logo-font;
+				@media (max-width: @screen-md-max) {
+					font-size: 4.8em;
+					line-height: 0.9em;
+				}
+				@media (max-width: @screen-sm-max) {
+					font-size: 3.8em;
+					line-height: 0.8em;
+				}
+				@media (max-width: @screen-xs-max) {
+					font-size: 2.8em;
+					line-height: 0.8em;
+				}			
+			}
+			h3 {
+				font-size: 5.538em;
+				line-height: 1em;
+				padding-bottom: 0;
+				font-family: @logo-font;
+				@media (max-width: @screen-md-max) {
+					font-size: 4.2em;
+					line-height: 0.9em;
+				}
+				@media (max-width: @screen-sm-max) {
+					font-size: 3.2em;
+					line-height: 0.8em;
+				}
+				@media (max-width: @screen-xs-max) {
+					font-size: 2.2em;
+					line-height: 0.8em;
+				}				
+			}
+			h5 {
+				font-size: 1.654em;
+				line-height: 1.2em;
+				padding-bottom: 0;
+				font-family: @logo-font;
+				font-weight: 300;
+				@media (max-width: @screen-xs-max) {
+					font-size: 1.3em;
+				}
+			}
+			h6 {
+				font-size: 1.308em;
+				line-height: 1.3em;
+				padding-bottom: 0;
+				font-family: @logo-font;
+				font-weight: 300;
+				@media (max-width: @screen-xs-max) {
+					font-size: 1.1em;
+				}
+			}
+		}
+	}
+	&--icon {
+		@banner-icon-size:    4.615em;
+		@banner-icon-width:   1.643em;
+//		background-color: @banner-icon-bg;
+//		color: @banner-icon-color;
+		margin-bottom: 34px;
+			@media (max-width:  @screen-md-max) and (min-width:  @screen-md-min) {
+				margin-bottom: 10px;
+			}
+		&.banner--last {
+			margin-bottom: 0;
+		}
+		&__icon {
+			padding: 0.75em 0 0.6em 0;
+			width: @banner-icon-width;
+			font-size: @banner-icon-size;
+			line-height: 1em;
+			text-align: center;
+			@media (max-width:  @screen-md-max) and (min-width:  @screen-md-min) {
+				padding: 0.38em 0 0.4em 0;
+			}
+		}
+		&__text {
+			position: absolute;
+			width: 100%;
+			padding: 0 5% 0 @banner-icon-size * @banner-icon-width + 1em;
+			.vertical-align;
+			h4 {
+				font-size: 1.846em;
+				padding: 0;
+				margin: 0;
+			}
+			&__divider {
+				height: 10px;
+				border-bottom: 1px solid @banner-icon-color;
+				margin-bottom:10px;
+//				.banner--light & {
+//					border-color: @banner-icon-color-light;
+//				}
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		font-size: 8.5px;
+	}
+}
+.banner-collection, #bannerCollection [class*="col-"] {
+	float: none;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -4px;
+	margin-bottom: 45px;
+	@media (max-width: @screen-xs-max) {
+		display: block;
+		margin-right: 0;
+	}
+	img {
+		max-width: 100%;
+	}
+	.banner-collection__title {
+		margin: 15px 0 15px;
+		padding: 0;
+	}
+}

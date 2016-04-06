@@ -1,0 +1,51 @@
+.comments {
+	&__comment {
+		&__userpic {
+			width: 65px;
+			height: 65px;
+			float: left;
+			border-radius: 50%;
+//			background-color: @color-white;
+//			color: @color-light;
+			margin: 0 15px 0 0;
+			font-size: 40px;
+			line-height: 73px;
+			text-align: center;
+			.mdShadow(1);
+			.transition (box-shadow, 300ms);
+			&:hover {
+				.mdShadow(2);
+			}
+		}
+		&__text {
+			overflow: hidden;
+			padding: 10px 0 35px;
+			&__username {
+				padding-bottom: 3px;
+				font-weight: 400;
+			}
+			&__date {
+				font-size: 0.923em;
+				padding-bottom: 10px;
+			}
+		}
+		&--replay {
+			margin-left: 80px;
+		}
+	}
+}
+.comment-form .form-group {
+	margin-bottom: 8px
+}
+.comment-form input[type=text], .comment-form textarea {
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	padding: 5px 0;
+	margin-bottom: 0;
+	height: 38px
+}
+.comment-form textarea {
+	padding: 12px 0;
+	overflow: hidden
+}

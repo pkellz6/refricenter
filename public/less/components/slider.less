@@ -1,0 +1,145 @@
+.tp-banner-container{
+	width:100%;
+	position:relative;
+	padding:0;
+	opacity: 0;
+	height: 2000px;
+}
+
+.tp-banner{
+	width:100%;
+	position:relative;
+}
+
+.tp-banner-fullscreen-container {
+		width:100%;
+		position:relative;
+		padding:0;
+}
+.tp-caption {
+	&--wd-1 {
+		font-size: 115px;
+		line-height:1em;
+//		color: #fff;
+  		font-family: @logo-font;
+		font-weight: bold;
+	}
+	&--wd-2 {
+		font-size: 84px;
+		line-height:1em;
+		font-weight: lighter;
+//		color: #fff;
+  		font-family: @logo-font;
+	}
+	&--wd-3 {
+		font-size: 26px;
+		line-height:1em;
+//		color: #fff;
+  		font-family: @custom-font;
+	}
+	&--wd-4 {
+		font-size: 64px;
+		line-height:1em;
+//		color: #000;
+  		font-family: @logo-font;
+		font-weight: bold;
+	}
+	&--wd-5 {
+		font-size: 44px;
+		line-height:1em;
+//		color: #2b383e;
+  		font-family: @logo-font;
+	}
+	&--wd-6 {
+		font-size: 16px;
+		line-height:1em;
+//		color: #000;
+  		font-family: @custom-font;
+	}
+	&--wd-7 {
+		font-size: 64px;
+		line-height:1em;
+//		color: #fff;
+  		font-family: @custom-font;
+	}
+	&--wd-8 {
+		font-size: 36px;
+		line-height:1em;
+//		color: #fff;
+  		font-family: @logo-font;
+	}
+	.btn--wd {
+		font-size: 18px;
+//		color: @button-color !important;
+	}
+	@media (max-width: @screen-xs-max) {
+		.btn--wd.btn--xl {
+			font-size: 16px;
+			padding: 12px 20px;
+		}
+	}
+}
+.scroll-to-content {
+	position: absolute;
+	z-index: 100;
+	bottom: 15px;
+	left: 50%;
+	.transform (translate(-50%, 0));
+	text-align: center;
+	.transition (all, 300ms, ease-out, 0s);
+	.icon {
+		position:absolute;
+		top: 26px;
+		left: 24px;
+	}
+	&:hover {
+		bottom: 5px;
+		.icon {
+			 -webkit-animation: scroll-ani 800ms linear infinite;
+			  -moz-animation: scroll-ani 800ms linear infinite;
+			  animation: scroll-ani 800ms linear infinite;
+		}
+	}
+}
+
+.single-slider {
+	opacity: 0;
+	.transition (opacity, 300ms, ease-out, 0s);
+	li {
+		position: relative;
+	}
+	&__image {
+	}
+	&__text {
+		position: absolute;
+		width: 100%;
+		.vertical-align;
+		text-align: center;
+//		color: @color-white;
+		h2 {
+			font-size: 68px;
+			line-height: 1em;
+			padding: 0;
+			@media (max-width:479px) {
+				font-size: 42px;				
+			}
+		}
+		h3 {
+			font-size: 40px;
+			line-height: 1em;
+			padding: 0 0 10px;
+			@media (max-width:479px) {
+				font-size: 24px;
+				padding: 0 0 5px;
+			}
+		}
+		h4 {
+			font-size: 17px;
+			padding: 0 0 25px;
+			@media (max-width:479px) {
+				font-size: 14px;
+				padding: 0 0 10px;
+			}
+		}
+	}
+}

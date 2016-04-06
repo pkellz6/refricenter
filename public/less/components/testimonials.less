@@ -1,0 +1,42 @@
+.testimonials {
+	&__item {
+		.card;
+		&__image-sell {
+//			background: @testimonials-image-sell-bg;
+			padding: 12px 0 12px;
+			text-align: center;
+			&__author{
+				font-size: 0.923em;
+				padding: 10px 0 0;
+			}
+			img {
+				width: inherit !important;
+				max-width: 100% !important;
+				margin: 0 auto; 
+				border-radius: 50%;
+				.mdShadow(1);
+				.transition (box-shadow, 300ms);
+				&:hover {
+					.mdShadow(2);
+				}			
+			}
+		}
+		&__text {
+			position: relative;
+			margin:  17px 15px;
+			padding-left: 45px;
+			font-size: 1em;
+			line-height: 1.35em;
+			font-weight: lighter;
+			&:before {
+				position: absolute;
+				left: 0;
+				top: 0;
+				font-family: 'Welldone';
+				content: "\e639";
+				font-size: 26px;
+//				color: #d2d2d2;
+			}
+		}
+	}
+}
