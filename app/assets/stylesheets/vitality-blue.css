@@ -277,7 +277,6 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  padding: 100px 0;
 }
 header .intro-content {
   color: white;

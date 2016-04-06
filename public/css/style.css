@@ -5498,6 +5498,8 @@ body.fullwidth .header__dropdowns-container {
 }
 .logo img {
   max-width: 100%;
+  position: relative;
+  bottom: 8px;
 }
 .logo img.logo-transparent {
   display: none;
@@ -5508,6 +5510,8 @@ body.fullwidth .header__dropdowns-container {
 @media (max-width: 767px) {
   .logo img {
     height: 40px;
+    position: relative;
+    top: 5px;
   }
   .logo img.logo-default {
     display: none !important;
@@ -6590,7 +6594,7 @@ body.fullwidth .header__dropdowns-container {
 }
 @media (min-width: 992px) {
   .navbar.navbar-wd.stuck.stuck--smaller {
-    padding: 0;
+    padding-top: 20px;;
   }
 }
 .navbar #slidemenu {
