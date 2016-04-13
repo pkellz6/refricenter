@@ -3398,8 +3398,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-toggle .icon-bar {
   display: block;
-  width: 22px;
-  height: 2px;
+  width: 24px;
+  height: 4px;
   border-radius: 1px;
 }
 .navbar-toggle .icon-bar + .icon-bar {
@@ -5445,8 +5445,8 @@ body.fullwidth .header__dropdowns-container {
 }
 @media (max-width: 767px) {
   .header__dropdowns__button .icon {
-    font-size: 17px !important;
-    line-height: 43px;
+    font-size: 26px !important;
+    line-height: 60px;
   }
 }
 .header__cart {
@@ -5691,7 +5691,7 @@ body.fullwidth .header__dropdowns-container {
     margin: 0;
   }
   .navbar.navbar-wd .container {
-    padding: 0;
+    padding: 10px;
   }
 }
 .header--transparent .navbar.navbar-wd {
