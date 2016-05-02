@@ -10763,6 +10763,12 @@ body.compare-minimize {
   line-height: 1em;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
+  background-color: rgba(83, 109, 254, 0.95);
+  padding: 25px;
+  /*border: 2px solid;*/
+  border-radius: 25px;
+  color: white;
+
 }
 .tp-caption--wd-5 {
   font-size: 44px;
