@@ -5,7 +5,4 @@ class PagesController < ApplicationController
     @products = Product.all
   end
 
-
-
-
 end

@@ -15,16 +15,14 @@
   <tbody>
 
     <% @categories.each do |category| %>
-<div id="categories" class="transitions-enabled box panel panel-default">
+      <div id="categories" class="transitions-enabled box panel panel-default">
       <tr>
         <td><%= link_to image_tag(category.image), category %></td>
-
         <td><%= category.name %></td>
         <td><%= category.description %></td>
-              <td class="actions"><%= link_to 'Show', category %></td>
-
+        <td class="actions"><%= link_to 'Show', category %></td>
       </tr>
-</div>
+      </div>
       <% end %>
 
   </tbody>
